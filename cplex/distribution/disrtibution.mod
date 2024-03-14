@@ -100,7 +100,7 @@ float fv = 377.5;
 int big_M = 100000000; //10^8
 
 // Open market price per unit food crop to consumer;
-float W[locations][crops] = ...; 
+//float W[locations][crops] = ...; 
 
 //This are for different senarios and UNUSED
 // ############## ??? ######################
@@ -179,7 +179,7 @@ dexpr float transportation_cost_outbound = (sum (store in locations , distri in 
 
 //for a particular scenario
 //Expression to capture total cost of purchasing excess consumption over PDS purchase from the open-market i.e. total open-market cost to households over all districts and crops
-dexpr float Open_mkt_Cost = (sum (i in locations, j in crops) (W[i][j]*de[i][j]) ) ;
+//dexpr float Open_mkt_Cost = (sum (i in locations, j in crops) (W[i][j]*de[i][j]) ) ;
 
 
 
@@ -609,7 +609,7 @@ ct250: (sum ( store in locations, distri in 623..625 ) Q[store][distri][j] ) >= 
 
 // Interstate constraints - 18, 19
 
-ct1001: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1001: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 1 && store <= 14) && (distri >= 15)) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -618,7 +618,7 @@ ct1001: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1002: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1002: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 15 && store <= 26) && ((distri <= 14) || (distri >= 27))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -627,7 +627,7 @@ ct1002: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1003: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1003: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 27 && store <= 46) && ((distri <= 26) || (distri >= 47))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -636,7 +636,7 @@ ct1003: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1004: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1004: forall (store in locations, distri in locations, j in crops) {
 		    if ((store == 47) && ((distri <= 46) || (distri >= 48))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -645,7 +645,7 @@ ct1004: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1005: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1005: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 48 && store <= 62) && ((distri <= 47) || (distri >= 63))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -654,7 +654,7 @@ ct1005: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1006: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1006: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 63 && store <= 82) && ((distri <= 62) || (distri >= 83))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -663,7 +663,7 @@ ct1006: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-CT1007: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+CT1007: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 83 && store <= 90) && ((distri <= 82) || (distri >= 91))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -672,7 +672,7 @@ CT1007: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1008: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1008: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 91 && store <= 122) && ((distri <= 90) || (distri >= 123))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -681,7 +681,7 @@ ct1008: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1009: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1009: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 123 && store <= 193) && ((distri <= 122) || (distri >= 194))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -690,7 +690,7 @@ ct1009: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1010: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1010: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 194 && store <= 231) && ((distri <= 193) || (distri >= 232))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -699,7 +699,7 @@ ct1010: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1011: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1011: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 232 && store <= 235) && ((distri <= 231) || (distri >= 236))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -708,7 +708,7 @@ ct1011: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1012: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1012: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 236 && store <= 251) && ((distri <= 235) || (distri >= 252))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -717,7 +717,7 @@ ct1012: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1013: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1013: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 252 && store <= 262) && ((distri <= 251) || (distri >= 263))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -726,7 +726,7 @@ ct1013: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1014: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1014: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 263 && store <= 271) && ((distri <= 262) || (distri >= 272))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -735,7 +735,7 @@ ct1014: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1015: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1015: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 272 && store <= 279) && ((distri <= 271) || (distri >= 280))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -744,7 +744,7 @@ ct1015: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1016: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1016: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 280 && store <= 283) && ((distri <= 279) || (distri >= 284))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -753,7 +753,7 @@ ct1016: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1017: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1017: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 284 && store <= 290) && ((distri <= 283) || (distri >= 291))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -762,7 +762,7 @@ ct1017: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1018: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1018: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 291 && store <= 317) && ((distri <= 290) || (distri >= 318))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -771,7 +771,7 @@ ct1018: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1019: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1019: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 318 && store <= 336) && ((distri <= 317) || (distri >= 337))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -780,7 +780,7 @@ ct1019: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1020: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1020: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 337 && store <= 358) && ((distri <= 336) || (distri >= 359))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -789,7 +789,7 @@ ct1020: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1021: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1021: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 359 && store <= 388) && ((distri <= 358) || (distri >= 389))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -798,7 +798,7 @@ ct1021: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1022: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1022: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 389 && store <= 406) && ((distri <= 388) || (distri >= 407))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -807,7 +807,7 @@ ct1022: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1023: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1023: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 407 && store <= 456) && ((distri <= 406) || (distri >= 457))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -816,7 +816,7 @@ ct1023: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1024: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1024: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 457 && store <= 481) && ((distri <= 456) || (distri >= 482))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -825,7 +825,7 @@ ct1024: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1025: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1025: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 482 && store <= 483) && ((distri <= 481) || (distri >= 484))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -834,7 +834,7 @@ ct1025: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1026: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1026: forall (store in locations, distri in locations, j in crops) {
 		    if ((store == 484) && ((distri <= 483) || (distri >= 485))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -843,7 +843,7 @@ ct1026: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1027: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1027: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 485 && store <= 518) && ((distri <= 484) || (distri >= 519))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -852,7 +852,7 @@ ct1027: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1028: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1028: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 519 && store <= 541) && ((distri <= 518) || (distri >= 542))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -861,7 +861,7 @@ ct1028: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1029: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1029: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 542 && store <= 570) && ((distri <= 541) || (distri >= 571))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -870,7 +870,7 @@ ct1029: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1030: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1030: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 571 && store <= 572) && ((distri <= 570) || (distri >= 573))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -879,7 +879,7 @@ ct1030: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1031: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1031: forall (store in locations, distri in locations, j in crops) {
 		    if ((store == 573) && ((distri <= 572) || (distri >= 574))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -888,7 +888,7 @@ ct1031: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1032: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1032: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 574 && store <= 587) && ((distri <= 573) || (distri >= 588))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -897,7 +897,7 @@ ct1032: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1033: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1033: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 588 && store <= 618) && ((distri <= 587) || (distri >= 619))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -906,7 +906,7 @@ ct1033: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1034: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1034: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 619 && store <= 622) && ((distri <= 618) || (distri >= 623))) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;
@@ -915,7 +915,7 @@ ct1034: forall (store in locations, distri in locations, j in {"jowar", "bajra",
 		    }
 		}
 
-ct1035: forall (store in locations, distri in locations, j in {"jowar", "bajra", "ragi", "maize", "barley", "small_crops"}) {
+ct1035: forall (store in locations, distri in locations, j in crops) {
 		    if ((store >= 623) && (distri <= 622)) {
 		        Q[store][distri][j] == 0;
 		        T[store][distri][j] == 0;

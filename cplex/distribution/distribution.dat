@@ -36,7 +36,7 @@ leakage from SheetRead(sheet,"'L_kj'!B2:S4");
 curr_PDS_C from SheetRead(sheet,"'Curr_PDS_Cij'!D2:U47");
 
 // Open market price per unit crop to consumer;
-W from SheetRead(sheet,"'W_ij'!BC2:BJ47");
+//W from SheetRead(sheet,"'W_ij'!BC2:BJ47");
 
 
 

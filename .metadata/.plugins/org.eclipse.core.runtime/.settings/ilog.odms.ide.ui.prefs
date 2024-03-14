@@ -1,7 +1,5 @@
 comment.color=0,255,0
-default.color=255,255,255
 eclipse.preferences.version=1
 float.color=255,128,64
-identifier.color=237,218,254
+identifier.color=255,128,192
 int.color=255,128,0
-keyword.color=128,255,255
