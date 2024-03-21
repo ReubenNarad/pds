@@ -20,12 +20,6 @@ cplex.threads = 16;
 //DEFINE SETS 
 
 
-// ###################### NOTE ########################
-// I am using districts 1 ... 46, covering the states Jammu & Kashmir, Himachal Pradesh, Punjab
-// 
-
-
-
 //Define set of districts
 range locations = 1..46; // Changed from 625
 
@@ -40,13 +34,6 @@ execute {
 //Define set of crops 
 {string} crops = ...;
 
-
-// NOTE: Unused
-//This are for additional senarios
-//Define set of states which observe quantity coming in for distribution
-//{string} to_states =...;
-//Define set of states which observe quantity quantity out of the state for distribution
-//{string} from_states =...;
 
 //DEFINE PARAMETERS 
 
@@ -148,7 +135,7 @@ dvar int+ z[locations];
 dvar boolean Z[locations][crops];
 
 //Excess consumption over the PDS purchase for each food crop in each district
-dvar float+ de[locations][crops];
+//dvar float+ de[locations][crops];
 
 //Building the objective function
 
@@ -177,12 +164,6 @@ dexpr float transportation_cost_stage2 = (sum (proc in locations, store in locat
 //Expression to capture total transportation cost when transporating crops from Stage 2 of storage to distribution district, over all districts and food crops
 dexpr float transportation_cost_outbound = (sum (store in locations , distri in locations, j in crops) ( S[store][distri][j] * tc_road * tt[store][distri] ) ) ;
 
-//for a particular scenario
-//Expression to capture total cost of purchasing excess consumption over PDS purchase from the open-market i.e. total open-market cost to households over all districts and crops
-//dexpr float Open_mkt_Cost = (sum (i in locations, j in crops) (W[i][j]*de[i][j]) ) ;
-
-
-
 
 //MODEL
 
@@ -197,20 +178,6 @@ proc_cost + MSP + storage_cost1 + storage_cost2 + transportation_cost_farmer + t
 //CONSTRAINTS 
 subject to {
 
-//Comment out this constraint when allowing for procurement of all crops **
-//Constraint to only allow for procurement of ONLY rice & wheat
-/*
-forall ( i in locations) {
-
-Z[i]["jowar"] == 0 ;
-Z[i]["bajra"] == 0 ;
-Z[i]["ragi"] == 0 ;
-Z[i]["maize"] == 0 ;
-Z[i]["barley"] == 0 ;
-Z[i]["small_crops"] == 0 ;
-
-}
-*/
 
 // Constraint 1
 forall ( i in locations, j in crops)  { 
@@ -218,7 +185,7 @@ forall ( i in locations, j in crops)  {
 // Quantity sent for procurement from district i of j has to be less than equal to the quantity available for procurement
 	ct1: ( sum (proc in locations) Q[i][proc][j] ) <= PC[i][j] ;
 
-	c42: de[i][j] == D[i][j] - PDS_consmp[i][j] ;	
+//	c42: de[i][j] == D[i][j] - PDS_consmp[i][j] ;	
 }
 
 // Constraint 2-4
@@ -360,19 +327,20 @@ If allowing for procurement of all crops (coarse crops + rice and wheat )
  change this constraint to: for each district, total PDS purchase (sum over all crops) should not be less than current(2009-10) total PDS consumption (sum over all crops). 
 */
 // Constraint 11
-forall ( distri in locations) {
-
-	ct219: ( sum( j in crops ) curr_PDS_C[distri][j] ) <= ( sum( j in crops ) PDS_consmp[distri][j] )  ;
-
-}
+//forall ( distri in locations) {
+//
+//	ct219: ( sum( j in crops ) curr_PDS_C[distri][j] ) <= ( sum( j in crops ) PDS_consmp[distri][j] )  ;
+//
+//}
 
 //Constraint 12
 forall ( distri in locations, j in crops) { 
 
 //PDS Purchase has to be less the consumption of crop j in the district
-	ct217: PDS_consmp[distri][j] <= D[distri][j] ;
+//	ct217: PDS_consmp[distri][j] <= D[distri][j] ;
+	ct217: PDS_consmp[distri][j] >= D[distri][j] ;
 	
-	ct218: PDS_consmp[distri][j] <= ( sum (store in locations) S[store][distri][j] ) ; 
+//	ct218: PDS_consmp[distri][j] <= ( sum (store in locations) S[store][distri][j] ) ; 
 }
 
 
@@ -952,7 +920,7 @@ execute {
 	ofile.writeln("Optimal_transportation_cost_stage2 = " + transportation_cost_stage2.solutionValue );
 	ofile.writeln("Optimal_transportation_cost_outbound = " + transportation_cost_outbound.solutionValue );
 	ofile.writeln("Optimal_MSP_cost = " + MSP.solutionValue );
-	ofile.writeln("Optimal_Open_Mkt_Cost = " + Open_mkt_Cost.solutionValue );
+//	ofile.writeln("Optimal_Open_Mkt_Cost = " + Open_mkt_Cost.solutionValue );
 	ofile.close();
  
  //WRITING values of decision variable Q
@@ -1037,17 +1005,17 @@ var ofile2 = new IloOplOutputFile("Z_Interstate.txt");
 
 //WRITING values of decision variable de i.e. excess demand 	 
 	  	 
- var ofile7 = new IloOplOutputFile("de_Interstate.txt");  
- 
-  	 	  	 
-   for(i in locations) 
-  {
-  	for ( j in crops) {
-     ofile7.writeln("de["+i+"]["+j+"]= "+de[i][j].solutionValue+" ");
-  		}	
-  ofile7.writeln (" "); 	 
-  } 
-  	 	  	 
-ofile7.close(); 
-
+// var ofile7 = new IloOplOutputFile("de_Interstate.txt");  
+// 
+//  	 	  	 
+//   for(i in locations) 
+//  {
+//  	for ( j in crops) {
+//     ofile7.writeln("de["+i+"]["+j+"]= "+de[i][j].solutionValue+" ");
+//  		}	
+//  ofile7.writeln (" "); 	 
+//  } 
+//  	 	  	 
+//ofile7.close(); 
+//
 }
