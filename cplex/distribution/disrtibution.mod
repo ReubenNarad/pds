@@ -9,13 +9,16 @@ execute PARAMS
 {
 
 cplex.nodefileind = 3; //saves nodes in files instead of working memory
-cplex.workmem = 55296; //restrict working memory to 50 mb
+cplex.workmem = 6400; //restrict working memory to 50 mb
 cplex.preind = 1; 
 cplex.epgap = 0.0115; // Optimality gap = 1.15%
 cplex.threads = 16;
 
 }
 
+execute {
+writeln(cplex.workmem)
+}
 
 //DEFINE SETS 
 
@@ -26,10 +29,6 @@ range locations = 1..46; // Changed from 625
 //Define set of states
 {string} states = ...;
 
-execute {
-  writeln("Including states:")
-  writeln(states);
-}
 
 //Define set of crops 
 {string} crops = ...;
@@ -53,17 +52,25 @@ float F[crops] = ...;
 float PC[locations][crops] = ...;  
 
 // Demand of each crop in each district;
-float D[locations][crops] = ...; 
+//float D[locations][crops] = ...; 
 
 // Road Distance between districts
 float tt[locations][locations] = ...; 
 
+
 //Leakage ratio of a crop in each state
 float leakage[states][crops] = ... ;
+
 
 /* Current (2011-12) PDS consumption in each district for each food crop. 
 This would be 0 for coarse crops as coarse crops were not purchased through PDS in 2009-10 */
 float curr_PDS_C[locations][crops] = ...;
+
+//PDS consumption/purchase of each crop in each district 
+float PDS_consmp[locations][crops] = ... ;
+
+
+// PARAMETERS
 
 //Transporation cost to farmers
 float tcf = 2.64;
@@ -117,10 +124,6 @@ dvar float+ Tp[locations][locations][crops];
 //Quantity of a food crop going from stage 2 storing district to distribution district
 dvar float+ S[locations][locations][crops] ;
 
-//PDS consumption/purchase of each crop in each district 
-//Name different from the, that is PCi'j 
-dvar float+ PDS_consmp[locations][crops];
-
 //Number of storage centers in stage 1 of Storage in each district
 dvar int+ Y[locations];
 
@@ -164,6 +167,19 @@ dexpr float transportation_cost_stage2 = (sum (proc in locations, store in locat
 //Expression to capture total transportation cost when transporating crops from Stage 2 of storage to distribution district, over all districts and food crops
 dexpr float transportation_cost_outbound = (sum (store in locations , distri in locations, j in crops) ( S[store][distri][j] * tc_road * tt[store][distri] ) ) ;
 
+execute {
+	for (var state in states) {
+		writeln(state);
+	    writeln(leakage[state]);
+	}
+  }
+
+execute {
+  writeln("Curr pds C:");
+  writeln(curr_PDS_C);
+  writeln("assigned demand:");
+  writeln(PDS_consmp);
+}
 
 //MODEL
 
@@ -334,18 +350,19 @@ If allowing for procurement of all crops (coarse crops + rice and wheat )
 //}
 
 //Constraint 12
-forall ( distri in locations, j in crops) { 
+//forall ( distri in locations, j in crops) { 
 
 //PDS Purchase has to be less the consumption of crop j in the district
 //	ct217: PDS_consmp[distri][j] <= D[distri][j] ;
-	ct217: PDS_consmp[distri][j] >= D[distri][j] ;
+//	ct217: PDS_consmp[distri][j] >= D[distri][j] ;
 	
 //	ct218: PDS_consmp[distri][j] <= ( sum (store in locations) S[store][distri][j] ) ; 
-}
+//}
 
 
 // Constraint 13
 //Incorporating leakage in the PDS Distribution. This constraint is written for each state.
+
 
 forall ( j in crops ) {
 

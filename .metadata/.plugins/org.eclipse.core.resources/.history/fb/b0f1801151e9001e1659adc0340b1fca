@@ -1,0 +1,47 @@
+/*********************************************
+ * OPL 22.1.1.0 Data
+ * Author: --
+ * Creation Date: Oct 2, 2023 at 2:19:14 PM
+ *********************************************/
+
+SheetConnection sheet("../data/2011.xlsx");
+
+SheetConnection demand("../data/demand.csv");
+
+// State names
+states from SheetRead(sheet, "'L_kj'!A2:A36");
+
+// crop names
+crops from SheetRead(sheet,"'MSP_j'!A2:A19");
+
+// Demand of each millet in each district, assigned by cluster;
+D from SheetRead(demand,"B2:S47");
+
+// Crop prices
+mspg from SheetRead(sheet,"'MSP_j'!B2:B19");
+
+// Operational Procurement Cost for each crop
+F from SheetRead(sheet,"'F_j'!B2:B19");
+
+//Govt. Disposable quantity of each crop in each district 
+PC from SheetRead(sheet,"'Sold_to_Govt.'!C2:T47");
+
+// Distance matrix                  vv     (change the letters too)
+tt from SheetRead(sheet,"'tt_ii'!B2:AU47");
+
+// Leakage
+leakage from SheetRead(sheet,"'L_kj'!B2:S36");
+
+// Current (2011-12) PDS consumption in each district for each food millet. 
+curr_PDS_C from SheetRead(sheet,"'Curr_PDS_Cij'!D2:U47");
+
+// Open market price per unit crop to consumer;
+//W from SheetRead(sheet,"'W_ij'!BC2:BJ47");
+
+
+
+//to_states from SheetRead ( sheet, "'Act_to_state'!B2:B20") ;
+//from_states from SheetRead ( sheet, "'Act_from_state'!B2:B12 ") ;
+//Act_Proc from SheetRead ( sheet, "'Act_Proc'!F2:M36") ;
+//Act_to_state from SheetRead ( sheet, "'Act_to_state'!E2:E20") ; 
+//Act_from_state from SheetRead ( sheet, "'Act_from_state'!E2:E12") ;
