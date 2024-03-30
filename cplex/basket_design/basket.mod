@@ -56,7 +56,7 @@ subject to {
 // After solving the model, write demand by district to a csv file:
 
 execute {
-  var f = new IloOplOutputFile("../data/demand.csv");
+  var f = new IloOplOutputFile("../data/basket.csv");
   var header = "district,Rice,Wheat"; // Start building the header string
   
   for(var c in Crops) {

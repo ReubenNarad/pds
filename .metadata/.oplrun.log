@@ -2326,3 +2326,166 @@ Command-line arguments:  -clean -nl en_US -configuration C:\Users\reuben\Desktop
 
 !ENTRY ilog.odms.ide.opllang.remote 1 0 2024-03-30 19:45:38.981
 !MESSAGE Run distribution in C:/Users/reuben/Desktop/pds/cplex
+!SESSION 2024-03-30 20:20:01.989 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20160719_312156 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160719_1144_B312156
+JIT  - tr.r14.java_20160629_120284.01
+GC   - R28_Java8_SR3_20160719_1144_B312156_CMPRSS
+J9CL - 20160719_312156
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration C:\Users\reuben\Desktop\pds\.metadata\workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-03-30 20:20:01.989
+!MESSAGE Run distribution in C:/Users/reuben/Desktop/pds/cplex
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-03-30 20:20:08.224
+!MESSAGE run failed
+!STACK 0
+ilog.concert.IloException: Processing failed.
+	at ilog.opl.opl_lang_wrapJNI.IloOplModel_getModel(Native Method)
+	at ilog.opl.IloOplModel.getModel(IloOplModel.java:537)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell.loadModel(IloAbstractRunShell.java:1198)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessModel(IloOplRunConfigRunner.java:162)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:398)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1589)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2024-03-30 20:20:58.715 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20160719_312156 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160719_1144_B312156
+JIT  - tr.r14.java_20160629_120284.01
+GC   - R28_Java8_SR3_20160719_1144_B312156_CMPRSS
+J9CL - 20160719_312156
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration C:\Users\reuben\Desktop\pds\.metadata\workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-03-30 20:20:58.715
+!MESSAGE Run distribution in C:/Users/reuben/Desktop/pds/cplex
+!SESSION 2024-03-30 21:42:50.435 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20160719_312156 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160719_1144_B312156
+JIT  - tr.r14.java_20160629_120284.01
+GC   - R28_Java8_SR3_20160719_1144_B312156_CMPRSS
+J9CL - 20160719_312156
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration C:\Users\reuben\Desktop\pds\.metadata\workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-03-30 21:42:50.435
+!MESSAGE Run distribution in C:/Users/reuben/Desktop/pds/cplex
+!SESSION 2024-03-30 21:54:40.258 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20160719_312156 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160719_1144_B312156
+JIT  - tr.r14.java_20160629_120284.01
+GC   - R28_Java8_SR3_20160719_1144_B312156_CMPRSS
+J9CL - 20160719_312156
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration C:\Users\reuben\Desktop\pds\.metadata\workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-03-30 21:54:40.274
+!MESSAGE Run distribution in C:/Users/reuben/Desktop/pds/cplex
+!SESSION 2024-03-30 22:19:37.347 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20160719_312156 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160719_1144_B312156
+JIT  - tr.r14.java_20160629_120284.01
+GC   - R28_Java8_SR3_20160719_1144_B312156_CMPRSS
+J9CL - 20160719_312156
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration C:\Users\reuben\Desktop\pds\.metadata\workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-03-30 22:19:37.347
+!MESSAGE Run distribution in C:/Users/reuben/Desktop/pds/cplex
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-03-30 22:21:26.270
+!MESSAGE Processing failed.
+!STACK 0
+ilog.concert.IloException: Processing failed.
+	at ilog.opl.opl_lang_wrapJNI.IloOplModel_postProcess(Native Method)
+	at ilog.opl.IloOplModel.postProcess(IloOplModel.java:651)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell.postProcess(IloAbstractRunShell.java:1950)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell.sendSolution(IloAbstractRunShell.java:1810)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell.processSolution(IloAbstractRunShell.java:1864)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessModel(IloOplRunConfigRunner.java:171)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:398)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1589)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2024-03-30 22:22:28.068 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20160719_312156 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160719_1144_B312156
+JIT  - tr.r14.java_20160629_120284.01
+GC   - R28_Java8_SR3_20160719_1144_B312156_CMPRSS
+J9CL - 20160719_312156
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration C:\Users\reuben\Desktop\pds\.metadata\workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-03-30 22:22:28.068
+!MESSAGE Run distribution in C:/Users/reuben/Desktop/pds/cplex
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-03-30 22:23:48.787
+!MESSAGE No OPL IDE for this oplrun
+
+!ENTRY ilog.odms.ide.opllang 1 0 2024-03-30 22:23:49.226
+!MESSAGE concert_wrap.IloEndMT
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-03-30 22:23:52.506
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: ilog.odms.ide.opllang.run.IloAbstractRunShell$2
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-03-30 22:23:52.662
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: ilog.odms.ide.opllang.remote.mbean.IloOplrunRemote$HeartBeatListenerJob
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-03-30 22:23:52.662
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: ilog.odms.ide.opllang.remote.IloOplRunConfigRunner
+!SESSION 2024-03-30 22:24:51.863 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20160719_312156 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160719_1144_B312156
+JIT  - tr.r14.java_20160629_120284.01
+GC   - R28_Java8_SR3_20160719_1144_B312156_CMPRSS
+J9CL - 20160719_312156
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration C:\Users\reuben\Desktop\pds\.metadata\workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-03-30 22:24:51.863
+!MESSAGE Run distribution in C:/Users/reuben/Desktop/pds/cplex
+
+!ENTRY ilog.odms.ide.opllang.remote 4 0 2024-03-30 22:26:53.069
+!MESSAGE Processing failed.
+!STACK 0
+ilog.concert.IloException: Processing failed.
+	at ilog.opl.opl_lang_wrapJNI.IloOplModel_postProcess(Native Method)
+	at ilog.opl.IloOplModel.postProcess(IloOplModel.java:651)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell.postProcess(IloAbstractRunShell.java:1950)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell.sendSolution(IloAbstractRunShell.java:1810)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell.processSolution(IloAbstractRunShell.java:1864)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doProcessModel(IloOplRunConfigRunner.java:171)
+	at ilog.odms.ide.opllang.remote.IloOplRunConfigRunner.doRun(IloOplRunConfigRunner.java:398)
+	at ilog.odms.ide.opllang.run.IloAbstractRunShell$2.run(IloAbstractRunShell.java:1589)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2024-03-30 22:27:41.804 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20160719_312156 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160719_1144_B312156
+JIT  - tr.r14.java_20160629_120284.01
+GC   - R28_Java8_SR3_20160719_1144_B312156_CMPRSS
+J9CL - 20160719_312156
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration C:\Users\reuben\Desktop\pds\.metadata\workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-03-30 22:27:41.804
+!MESSAGE Run distribution in C:/Users/reuben/Desktop/pds/cplex
+!SESSION 2024-03-30 22:33:47.104 -----------------------------------------------
+eclipse.buildId=unknown
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 10 amd64-64 Compressed References 20160719_312156 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160719_1144_B312156
+JIT  - tr.r14.java_20160629_120284.01
+GC   - R28_Java8_SR3_20160719_1144_B312156_CMPRSS
+J9CL - 20160719_312156
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -clean -nl en_US -configuration C:\Users\reuben\Desktop\pds\.metadata\workspace_oplrun
+
+!ENTRY ilog.odms.ide.opllang.remote 1 0 2024-03-30 22:33:47.119
+!MESSAGE Run distribution in C:/Users/reuben/Desktop/pds/cplex

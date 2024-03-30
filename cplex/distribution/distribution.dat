@@ -6,7 +6,7 @@
 
 SheetConnection sheet("../data/toy.xlsx");
 
-SheetConnection demand("../data/demand.csv");
+SheetConnection demand("../data/basket.csv");
 
 // State names
 states from SheetRead(sheet, "'L_kj'!A2:A36");

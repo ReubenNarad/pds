@@ -137,8 +137,7 @@ dvar int+ z[locations];
 //This is 1-yk, different as compared to appendix 
 dvar boolean Z[locations][crops];
 
-//Excess consumption over the PDS purchase for each food crop in each district
-//dvar float+ de[locations][crops];
+
 
 //Building the objective function
 
@@ -167,20 +166,6 @@ dexpr float transportation_cost_stage2 = (sum (proc in locations, store in locat
 //Expression to capture total transportation cost when transporating crops from Stage 2 of storage to distribution district, over all districts and food crops
 dexpr float transportation_cost_outbound = (sum (store in locations , distri in locations, j in crops) ( S[store][distri][j] * tc_road * tt[store][distri] ) ) ;
 
-execute {
-	for (var state in states) {
-		writeln(state);
-	    writeln(leakage[state]);
-	}
-  }
-
-execute {
-  for (var i in locations) {
-  	  
-  
-  	writeln(PC[i])  
-  }
-}
 
 //MODEL
 
@@ -350,11 +335,6 @@ If allowing for procurement of all crops (coarse crops + rice and wheat )
 
 //Constraint 12
 forall ( distri in locations, j in crops) { 
-
-//PDS Purchase has to be less the consumption of crop j in the district
-//	ct217: PDS_consmp[distri][j] <= D[distri][j] ;
-//	ct217: PDS_consmp[distri][j] >= D[distri][j] ;
-	
 	ct218: PDS_consmp[distri][j] <= ( sum (store in locations) S[store][distri][j] ) ; 
 }
 
@@ -364,11 +344,10 @@ forall ( distri in locations, j in crops) {
 
 
 forall ( j in crops ) {
-
 ct143: (sum ( distri in (1..14) ) PDS_consmp[distri][j] ) <= (sum ( store in locations, distri in (1..14) ) S[store][distri][j] ) * (1 - leakage["Jammu & Kashmir"][j] ) ; 
-//
+
 ct144: (sum ( distri in 15..26 ) PDS_consmp[distri][j] ) <= (sum ( store in locations, distri in 15..26 ) S[store][distri][j] )* (1 - leakage["Himachal Pradesh"][j] ); 
-//
+
 ct145: (sum ( distri in 27..46 ) PDS_consmp[distri][j] ) <= (sum ( store in locations, distri in 27..46 ) S[store][distri][j] ) * (1 - leakage["Punjab"][j] );   
 //
 //ct111: (sum ( distri in 47..47 ) PDS_consmp[distri][j] ) <= (sum ( store in locations, distri in 47..47 ) S[store][distri][j] ) * ( 1- leakage ["Chandigarh"][j] ) ; 
@@ -437,159 +416,6 @@ ct145: (sum ( distri in 27..46 ) PDS_consmp[distri][j] ) <= (sum ( store in loca
 
 }
 
-/*
-//IMPOSING MOVEMENT & PROCUREMENT PATTERN. Comment out these constraints when allowing for procurement of ALL cropS.
- 
-//IMPOSING MOVEMENT 
-
-// Reported quantity going from states is a lower bound to model-determined quantity leaving states
-// This is the data from FCI which tells from which state the surplus crops are mmving from and going to which state, to replicate the current PDS supply chain. 
-
-
-ct401: (sum ( proc in (asSet(locations) diff asSet(27..46)), distri in 27..46, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["Punjab"] ;  
-
-ct402: (sum ( proc in (asSet(locations) diff asSet(63..82)), distri in 63..82, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["Hariyana"] ; 
-
-ct403: (sum ( proc in (asSet(locations) diff asSet(48..62)), distri in 48..62, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["Uttaranchal"] ; 
-	
-ct404: (sum ( proc in (asSet(locations) diff asSet(123..193)), distri in 123..193, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["Uttar Pradesh"] ; 
-
-ct405: (sum ( proc in (asSet(locations) diff asSet(194..231)), distri in 194..231, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["Bihar"] ; 
-
-ct406: (sum ( proc in (asSet(locations) diff asSet(318..336)), distri in 318..336, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["West Bengal"] ; 
-
-ct407: (sum ( proc in (asSet(locations) diff asSet(485..518)), distri in 485..518, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["Maharashtra"] ; 
-
-ct408: (sum ( proc in (asSet(locations) diff asSet(359..388)), distri in 359..388, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["Orissa"] ; 
-
-ct409: (sum ( proc in (asSet(locations) diff asSet(389..406)), distri in 389..406, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["Chattisgarh"] ; 
-	
-ct410: (sum ( proc in (asSet(locations) diff asSet(407..456)), distri in 407..456, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["Madhya Pradesh"] ; 
-
-ct411: (sum ( proc in (asSet(locations) diff asSet(519..541)), distri in 519..541, j in crops) Tp[distri][proc][j] ) >= Act_from_state ["Andhra Pradesh"] ; 
-
-
-
-// Reported quantity coming to states is a lower bound to model-determined quantity coming in states
-// Constraint 27
-
-ct412: (sum ( proc in (asSet(locations) diff asSet(1..14)) , distri in (1..14) , j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Jammu & Kashmir"] ; 
-
-ct413: (sum ( proc in (asSet(locations) diff asSet(15..26)) , distri in 15..26, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Himachal Pradesh"] ; 
-
-ct414: (sum ( proc in (asSet(locations) diff asSet(48..62)), distri in 48..62, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Uttaranchal"] ; 
-
-ct415: (sum ( proc in (asSet(locations) diff asSet(83..90)), distri in 83..90, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Delhi"] ; 
-	
-ct416: (sum ( proc in (asSet(locations) diff asSet(123..193)), distri in 123..193, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Uttar Pradesh"] ; 
-
-ct417: (sum ( proc in (asSet(locations) diff asSet(194..231)), distri in 194..231, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Bihar"] ; 
-
-ct418: (sum ( proc in (asSet(locations) diff asSet(232..317)), distri in (232..317), j in crops) Tp[proc][distri][j] ) >= Act_to_state ["N.E.Zone"] ; // 8 states
-
-ct419: (sum ( proc in (asSet(locations) diff asSet(318..336)), distri in 318..336, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["West Bengal"] ; 
-
-ct420: (sum ( proc in (asSet(locations) diff asSet(91..122)), distri in 91..122, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Rajasthan"] ; 
-
-ct421: (sum ( proc in (asSet(locations) diff asSet(457..484)), distri in 457..484, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Gujarat"] ;  //Gujarat/D&D/D&N
-
-ct422: (sum ( proc in (asSet(locations) diff asSet(485..518)), distri in (asSet (485..518) union asSet (571..572)), j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Maharashtra"] ; //Maharashtra/Goa 
-
-ct423: (sum ( proc in (asSet(locations) diff asSet(542..570)), distri in 542..570, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Karnataka"] ;  
-
-ct424: (sum ( proc in (asSet(locations) diff asSet(573..587)), distri in 573..587, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Kerala"] ; //Kerala/Lakshwadweep
-
-ct425: (sum ( proc in (asSet(locations) diff asSet(337..358)), distri in 337..358, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Jharkhand"] ; 
-
-ct426: (sum ( proc in (asSet(locations) diff asSet(359..388)), distri in 359..388, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Orissa"] ; 
-
-ct427: (sum ( proc in (asSet(locations) diff asSet(389..406)), distri in 389..406, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Chattisgarh"] ; 
-	
-ct428: (sum ( proc in (asSet(locations) diff asSet(407..456)), distri in 407..456, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Madhya Pradesh"] ; 
-
-ct429: (sum ( proc in (asSet(locations) diff asSet(519..541)), distri in 519..541, j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Andhra Pradesh"] ; 
-
-ct430: (sum ( proc in (asSet(locations) diff asSet(588..625)), distri in (588..625) , j in crops) Tp[proc][distri][j] ) >= Act_to_state ["Tamil Nadu"] ; //TN/Pondi/A&N 
-*/
-
-
-//IMPOSING CURRENT (2009-10) PROCUREMENT
-// Constraint 24
-
-/*
-forall ( j in {"rice","wheat"} ) { 
-
-ct302: (sum ( store in locations, distri in (1..14) ) Q[store][distri][j] ) >=  Act_Proc ["Jammu & Kashmir"][j]  ;
-
-ct304: (sum ( store in locations, distri in 15..26 ) Q[store][distri][j] ) >=  Act_Proc ["Himachal Pradesh"][j] ;
-
-ct306: (sum ( store in locations, distri in 27..46 ) Q[store][distri][j] ) >=  Act_Proc ["Punjab"][j] ;
-
-ct308: (sum ( store in locations, distri in 47..47 ) Q[store][distri][j] ) >=  Act_Proc ["Chandigarh"][j]  ;
-
-ct310: (sum ( store in locations, distri in 63..82 ) Q[store][distri][j] ) >=  Act_Proc ["Hariyana"][j]  ; 
-
-ct312: (sum ( store in locations, distri in 48..62 ) Q[store][distri][j] ) >=  Act_Proc ["Uttaranchal"][j]  ; 
-
-ct314: (sum ( store in locations, distri in 83..90 ) Q[store][distri][j] ) >=  Act_Proc ["Delhi"][j]  ; 
-
-ct316: (sum ( store in locations, distri in 123..193 ) Q[store][distri][j] ) >=  Act_Proc ["Uttar Pradesh"][j]  ; 
-
-ct318: (sum ( store in locations, distri in 194..231 ) Q[store][distri][j] ) >=  Act_Proc ["Bihar"][j]  ; 
-
-ct320: (sum ( store in locations, distri in 232..235 ) Q[store][distri][j] ) >=  Act_Proc ["Sikkim"][j]  ; 
-
-ct322: (sum ( store in locations, distri in 236..251 ) Q[store][distri][j] ) >=  Act_Proc ["Arunachal Pradesh"][j]  ; 
-
-ct324: (sum ( store in locations, distri in 252..262 ) Q[store][distri][j] ) >=  Act_Proc ["Nagaland"][j] ; 
-
-ct326: (sum ( store in locations, distri in 263..271 ) Q[store][distri][j] ) >=  Act_Proc ["Maniupur"][j]  ; 
-
-ct328: (sum ( store in locations, distri in 272..279 ) Q[store][distri][j] ) >=  Act_Proc ["Mizoram"][j]  ; 
-
-ct330: (sum ( store in locations, distri in 280..283 ) Q[store][distri][j] ) >=  Act_Proc ["Tripura"][j]  ; 
-
-ct332: (sum ( store in locations, distri in 284..290 ) Q[store][distri][j] ) >=  Act_Proc ["Meghalaya"][j] ; 
-
-ct334: (sum ( store in locations, distri in 291..317 ) Q[store][distri][j] ) >=  Act_Proc ["Assam"][j] ; 
-
-ct336: (sum ( store in locations, distri in 318..336 ) Q[store][distri][j] ) >=  Act_Proc ["West Bengal"][j]  ; 
-
-ct338: (sum ( store in locations, distri in 91..122 ) Q[store][distri][j] ) >=  Act_Proc ["Rajasthan"][j]  ; 
-
-ct340: (sum ( store in locations, distri in 457..481 ) Q[store][distri][j] ) >=  Act_Proc ["Gujarat"][j] ; 
-
-ct342: (sum ( store in locations, distri in 482..483 ) Q[store][distri][j] ) >=  Act_Proc ["Daman & Diu"][j]  ; 
-
-ct344: (sum ( store in locations, distri in 484..484 ) Q[store][distri][j] ) >=  Act_Proc ["D & N Haveli"][j]  ; 
-
-ct346: (sum ( store in locations, distri in 485..518 ) Q[store][distri][j] ) >=  Act_Proc ["Maharashtra"][j]  ; 
-
-ct239: (sum ( store in locations, distri in 542..570 ) Q[store][distri][j] ) >=  Act_Proc ["Karnataka"][j]  ; 
-
-ct240: (sum ( store in locations, distri in 571..572 ) Q[store][distri][j] ) >=  Act_Proc ["Goa"][j]  ; 
-
-ct241: (sum ( store in locations, distri in 573..573 ) Q[store][distri][j] ) >=  Act_Proc ["Lakshadeep"][j]  ; 
-
-ct242: (sum ( store in locations, distri in 574..587 ) Q[store][distri][j] ) >=  Act_Proc ["Kerala"][j]  ; 
-
-ct243: (sum ( store in locations, distri in 337..358 ) Q[store][distri][j] ) >=  Act_Proc ["Jharkhand"][j]  ; 
-
-ct244: (sum ( store in locations, distri in 359..388 ) Q[store][distri][j] ) >=  Act_Proc ["Orissa"][j]  ; 
-
-ct245: (sum ( store in locations, distri in 389..406 ) Q[store][distri][j] ) >=  Act_Proc ["Chattisgarh"][j]  ; 
-
-ct246: (sum ( store in locations, distri in 407..456 ) Q[store][distri][j] ) >=  Act_Proc ["Madhya Pradesh"][j]  ; 
-
-ct247: (sum ( store in locations, distri in 519..541 ) Q[store][distri][j] ) >=  Act_Proc ["Andhra Pradesh"][j]  ; 
-
-ct248: (sum ( store in locations, distri in 588..618 ) Q[store][distri][j] ) >=  Act_Proc ["Tamil Nadu"][j]  ; 
-
-ct249: (sum ( store in locations, distri in 619..622 ) Q[store][distri][j] ) >=  Act_Proc ["Puducherry"][j]  ; 
-
-ct250: (sum ( store in locations, distri in 623..625 ) Q[store][distri][j] ) >=  Act_Proc ["A & N Island"][j]  ; 
-} 
-*/
 
 // Interstate constraints - 18, 19
 
@@ -908,24 +734,17 @@ ct1035: forall (store in locations, distri in locations, j in crops) {
 		    }
 		}
 
-} //END OF CONSTRAINTS
+}
+//END OF CONSTRAINTS
 
 
+//SAVE RESULTS
 
-//WRITING RESULTS 
-
-/*RESULTS ARE WRITTEN IN A .txt file
-Open file destination where you want to write/save the results. Write results in the file. 
-Close file.
-*/
-
+string output_path = "../../postprocess/data/";
 
 execute {
-
-
-//WRITING COST 
-
-	var ofile = new IloOplOutputFile("Optimal Cost_Interstate.txt");
+	// Write final costs
+	var ofile = new IloOplOutputFile(output_path + "Optimal Cost_Interstate.txt");
 	
 	ofile.writeln("Optimal objective value="+cplex.getObjValue());
 	ofile.writeln("Optimal_proc_cost = " + proc_cost.solutionValue );
@@ -936,11 +755,10 @@ execute {
 	ofile.writeln("Optimal_transportation_cost_stage2 = " + transportation_cost_stage2.solutionValue );
 	ofile.writeln("Optimal_transportation_cost_outbound = " + transportation_cost_outbound.solutionValue );
 	ofile.writeln("Optimal_MSP_cost = " + MSP.solutionValue );
-//	ofile.writeln("Optimal_Open_Mkt_Cost = " + Open_mkt_Cost.solutionValue );
 	ofile.close();
  
 	//WRITING values of decision variable Q
-	var Q_csv = new IloOplOutputFile("Q_Interstate.csv");  
+	var Q_csv = new IloOplOutputFile(output_path + "Q_Interstate.csv");  
 	for(var i in locations)
 	    for(var j in locations)
 	        for(var k in crops) {
@@ -949,14 +767,14 @@ execute {
 	Q_csv.close(); 
 	
 	//WRITING values of total number of storage centers in a district 
-	var Z_csv = new IloOplOutputFile("Z_Interstate.csv");  
+	var Z_csv = new IloOplOutputFile(output_path +"Z_Interstate.csv");  
 	for(i in locations) {
 	    Z_csv.writeln(i+","+z[i].solutionValue);
 	} 	 
 	Z_csv.close(); 
 	
 	//WRITING values of decision variable T
-	var T_csv = new IloOplOutputFile("T_Interstate.csv");  
+	var T_csv = new IloOplOutputFile(output_path + "T_Interstate.csv");  
 	for(i in locations)
 	    for(j in locations)
 	        for(k in crops) {
@@ -965,7 +783,7 @@ execute {
 	T_csv.close();  
 	
 	//WRITING values of decision variable Tp
-	var Tp_csv = new IloOplOutputFile("Tp_Interstate.csv");  
+	var Tp_csv = new IloOplOutputFile(output_path + "Tp_Interstate.csv");  
 	for(i in locations)
 	    for(j in locations)
 	        for(k in crops) {
@@ -974,7 +792,7 @@ execute {
 	Tp_csv.close(); 
 	
 	//WRITING values of decision variable S
-	var S_csv = new IloOplOutputFile("S_Interstate.csv");    
+	var S_csv = new IloOplOutputFile(output_path + "S_Interstate.csv");    
 	for(i in locations)
 	    for(j in locations)
 	        for(k in crops) {
@@ -983,26 +801,11 @@ execute {
 	S_csv.close(); 
 	
 	//WRITING values of decision variable PDS Purchase
-	var PC_csv = new IloOplOutputFile("PC_Interstate.csv");    
+	var PC_csv = new IloOplOutputFile(output_path + "PC_Interstate.csv");    
 	for(i in locations)
 	    for(j in crops) {
 	        PC_csv.writeln(i+","+j+","+PDS_consmp[i][j].solutionValue);
 	    }
 	PC_csv.close();
 	
-//WRITING values of decision variable de i.e. excess demand 	 
-	  	 
-// var ofile7 = new IloOplOutputFile("de_Interstate.txt");  
-// 
-//  	 	  	 
-//   for(i in locations) 
-//  {
-//  	for ( j in crops) {
-//     ofile7.writeln("de["+i+"]["+j+"]= "+de[i][j].solutionValue+" ");
-//  		}	
-//  ofile7.writeln (" "); 	 
-//  } 
-//  	 	  	 
-//ofile7.close(); 
-//
 }

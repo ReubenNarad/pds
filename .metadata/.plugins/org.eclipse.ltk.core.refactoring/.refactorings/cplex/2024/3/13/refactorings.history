@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;cplex/data/demand.csv&apos; to &apos;basket.csv&apos;" description="Rename resource &apos;demand.csv&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="data/demand.csv" name="basket.csv" stamp="1711830052169" updateReferences="true"/>
+</session>
