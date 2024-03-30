@@ -175,10 +175,11 @@ execute {
   }
 
 execute {
-  writeln("Curr pds C:");
-  writeln(curr_PDS_C);
-  writeln("assigned demand:");
-  writeln(PDS_consmp);
+  for (var i in locations) {
+  	  
+  
+  	writeln(PC[i])  
+  }
 }
 
 //MODEL
@@ -186,9 +187,7 @@ execute {
 //OBJECTIVE FUNCTION 
 //Minimize total government's cost
 minimize
-   
 proc_cost + MSP + storage_cost1 + storage_cost2 + transportation_cost_farmer + transportation_cost_stage1 + transportation_cost_stage2 + transportation_cost_outbound //+ Open_mkt_Cost
- 
 ;
 
 //CONSTRAINTS 
@@ -350,14 +349,14 @@ If allowing for procurement of all crops (coarse crops + rice and wheat )
 //}
 
 //Constraint 12
-//forall ( distri in locations, j in crops) { 
+forall ( distri in locations, j in crops) { 
 
 //PDS Purchase has to be less the consumption of crop j in the district
 //	ct217: PDS_consmp[distri][j] <= D[distri][j] ;
 //	ct217: PDS_consmp[distri][j] >= D[distri][j] ;
 	
-//	ct218: PDS_consmp[distri][j] <= ( sum (store in locations) S[store][distri][j] ) ; 
-//}
+	ct218: PDS_consmp[distri][j] <= ( sum (store in locations) S[store][distri][j] ) ; 
+}
 
 
 // Constraint 13
@@ -940,86 +939,57 @@ execute {
 //	ofile.writeln("Optimal_Open_Mkt_Cost = " + Open_mkt_Cost.solutionValue );
 	ofile.close();
  
- //WRITING values of decision variable Q
- 
-  var ofile1 = new IloOplOutputFile("Q_Interstate.txt");  
-  
-  for(var i in locations)
-  	 for(var j in locations)
-  	 	 for(var k in crops) {
-  	 	 
-  	 	 ofile1.writeln("Q["+i+"]["+j+"]["+k+"]= "+Q[i][j][k].solutionValue);
-  	 	  	 
-  	 	  	 }
-  	 	  	 
- ofile1.close(); 
-  	 	  	 
-//WRITING values of total number of storage centers in a district 
- 
-var ofile2 = new IloOplOutputFile("Z_Interstate.txt");  
- 
-   
-   for(i in locations)
-  			{
-  	 	 
-  	 	 ofile2.writeln("Z["+i+"]= "+z[i].solutionValue);
-  	
-  	 	   	 } 	 
-  	 	   	 
-  ofile2.close(); 
-  	 	   	 
-//WRITING values of decision variable T
-  var ofile3 = new IloOplOutputFile("T_Interstate.txt");  	  	 
-  	 	  	 
-  for(i in locations)
-  	 for(j in locations)
-  	 	 for(k in crops) {
-  	 	 
-  	 	 ofile3.writeln("T["+i+"]["+j+"]["+k+"]= "+T[i][j][k].solutionValue);
-  	 	  	 
-  	 	  	 }	
-  	 	  	 
-  ofile3.close();  
-  
-//WRITING values of decision variable Tp
-
-  var ofile4 = new IloOplOutputFile("Tp_Interstate.txt");  
-  
-  for(i in locations)
-  	 for(j in locations)
-  	 	 for(k in crops) {
-  	 	 
-  	 	 ofile4.writeln("Tp["+i+"]["+j+"]["+k+"]= "+Tp[i][j][k].solutionValue);
-  	 	  	 
-  	 	  	 }
-  	 	  	 
- ofile4.close(); 	
-  	 	  	 
- //WRITING values of decision variable S
-  var ofile5 = new IloOplOutputFile("S_Interstate.txt");    
-  
-  for(i in locations)
-  	 for(j in locations)
-  	 	 for(k in crops) {
-  	 	 
-  	 	 ofile5.writeln("S["+i+"]["+j+"]["+k+"]="+S[i][j][k].solutionValue);
-  	 	  	 
-  	 	  	 }
-  	 	  	 
-  ofile5.close(); 
-  
- //WRITING values of decision variable PDS Purchase
- var ofile6 = new IloOplOutputFile("PC_Interstate.txt");    
-  
- for(i in locations)
-  	 	 for(j in crops) {
-  	 	 
-  	 	 ofile6.writeln("PDS_C["+i+"]["+j+"]="+PDS_consmp[i][j].solutionValue);
-  	 	  	 
-  	 	  	 }
-  	 	  	 
-  ofile6.close(); 
-
+	//WRITING values of decision variable Q
+	var Q_csv = new IloOplOutputFile("Q_Interstate.csv");  
+	for(var i in locations)
+	    for(var j in locations)
+	        for(var k in crops) {
+	            Q_csv.writeln(i+","+j+","+k+","+Q[i][j][k].solutionValue);
+	        }
+	Q_csv.close(); 
+	
+	//WRITING values of total number of storage centers in a district 
+	var Z_csv = new IloOplOutputFile("Z_Interstate.csv");  
+	for(i in locations) {
+	    Z_csv.writeln(i+","+z[i].solutionValue);
+	} 	 
+	Z_csv.close(); 
+	
+	//WRITING values of decision variable T
+	var T_csv = new IloOplOutputFile("T_Interstate.csv");  
+	for(i in locations)
+	    for(j in locations)
+	        for(k in crops) {
+	            T_csv.writeln(i+","+j+","+k+","+T[i][j][k].solutionValue);
+	        }	
+	T_csv.close();  
+	
+	//WRITING values of decision variable Tp
+	var Tp_csv = new IloOplOutputFile("Tp_Interstate.csv");  
+	for(i in locations)
+	    for(j in locations)
+	        for(k in crops) {
+	            Tp_csv.writeln(i+","+j+","+k+","+Tp[i][j][k].solutionValue);
+	        }
+	Tp_csv.close(); 
+	
+	//WRITING values of decision variable S
+	var S_csv = new IloOplOutputFile("S_Interstate.csv");    
+	for(i in locations)
+	    for(j in locations)
+	        for(k in crops) {
+	            S_csv.writeln(i+","+j+","+k+","+S[i][j][k].solutionValue);
+	        }
+	S_csv.close(); 
+	
+	//WRITING values of decision variable PDS Purchase
+	var PC_csv = new IloOplOutputFile("PC_Interstate.csv");    
+	for(i in locations)
+	    for(j in crops) {
+	        PC_csv.writeln(i+","+j+","+PDS_consmp[i][j].solutionValue);
+	    }
+	PC_csv.close();
+	
 //WRITING values of decision variable de i.e. excess demand 	 
 	  	 
 // var ofile7 = new IloOplOutputFile("de_Interstate.txt");  

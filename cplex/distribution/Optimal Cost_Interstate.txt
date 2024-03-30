@@ -1,9 +1,9 @@
-Optimal objective value=115912.719199993
-Optimal_proc_cost = 0
-Optimal_storage_cost1 = 0
-Optimal_storage_cost2 = 0
+Optimal objective value=44374992.791296683
+Optimal_proc_cost = 1955315.933413569
+Optimal_storage_cost1 = 2370956.390266386
+Optimal_storage_cost2 = 964508.390266386
 Optimal_transportation_cost_farmer = 0
 Optimal_transportation_cost_stage1 = 0
 Optimal_transportation_cost_stage2 = 0
-Optimal_transportation_cost_outbound = 0
-Optimal_MSP_cost = 0
+Optimal_transportation_cost_outbound = 490121.438021328
+Optimal_MSP_cost = 38594090.639329031
