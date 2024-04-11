@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="" key="selection"/>
+		<item value="curr_PDS_C" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="demand.csv"/>
+			<item value="curr_PDS_C"/>
 			<item value="PDS_consmp"/>
-			<item value="writelnPDS_consmp"/>
-			<item value="writeln"/>
-			<item value="D["/>
-			<item value="PDS_cons"/>
-			<item value="cereals_district"/>
-			<item value="clusters_district"/>
+			<item value="de["/>
+			<item value="de "/>
+			<item value="de ="/>
+			<item value="de = "/>
+			<item value="de"/>
+			<item value="demand.csv"/>
 		</list>
 		<list key="replacehistory">
 			<item value=""/>

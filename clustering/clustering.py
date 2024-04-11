@@ -28,8 +28,8 @@ households = data.groupby('Cluster')['Households'].sum()
 grains = ['jowar','bajra','barley','maize','small millets','ragi']
 pulses = ['arhar','moong','masur','urd','peas','khesari','gram products','besan','other pulse products','other pulses']
 
-data_pulses = data.drop(columns=grains+['Median Income', 'Latitude', 'Longitude', 'Households'])
-data_grains = data.drop(columns=pulses+['Median Income', 'Latitude', 'Longitude', 'Households'])
+data_pulses = data.drop(columns=grains+['District', 'Median Income', 'Latitude', 'Longitude', 'Households'])
+data_grains = data.drop(columns=pulses+['District', 'Median Income', 'Latitude', 'Longitude', 'Households'])
 
 # Group by cluster and calculate median for each food item
 pulses_summary = data_pulses.groupby('Cluster').median()
@@ -60,6 +60,8 @@ data[['District', 'Households', 'Cluster', 'Staple']].to_csv(CPLEX_DATA_PATH + '
 
 ### CREATE FIGURES
 
+POSTPROCESS_PATH = '../postprocess/figs/'
+
 # Cluster Map
 plt.figure(figsize=(6, 12))
 cmap = plt.get_cmap("Set1")
@@ -76,7 +78,7 @@ cluster_labels = np.unique(data['Cluster'])
 handles = [plt.Line2D([0], [0], marker='o', color='w', markerfacecolor=c, markersize=10) for c in colors]
 plt.legend(handles, cluster_labels, title="Clusters")
 
-plt.savefig('cluster_map.png')
+plt.savefig(POSTPROCESS_PATH + 'cluster_map.png')
 
 # Staple Preferences Map
 plt.figure(figsize=(6, 12))
@@ -93,11 +95,11 @@ labels = ['Rice', 'Mix', 'Wheat']
 legend_handles = [plt.Line2D([], [], color=color_map[labels[i]], marker='o', linestyle='None', markersize=10, label=labels[i]) for i in range(len(labels))]
 plt.legend(handles=legend_handles)
 
-plt.savefig('staple_preference.png')
+plt.savefig(POSTPROCESS_PATH + 'staple_preference.png')
 
 # Crop Preferences Plot
 combined.drop(columns='Households').plot(kind='bar', figsize=(20,10))
 plt.title('Relative crop preferences by cluster')
 plt.ylabel('Preference')
 plt.xlabel('Cluster')
-plt.savefig('preferences.png')
+plt.savefig(POSTPROCESS_PATH + 'preferences.png')

@@ -1,626 +1,626 @@
 District,Households,Cluster,Staple
-Kupwara,85772,0,Rice
-Baramula,163437,3,Rice
-Srinagar,166121,2,Rice
-Badgam,84411,0,Rice
-Pulwama,99548,2,Rice
-Anantnag,172110,0,Rice
-Leh,14878,2,Mix
-Kargil,21566,2,Rice
-Doda,131199,2,Mix
-Udhampur,161985,2,Mix
-Punch,72512,2,Mix
-Rajauri,95340,3,Mix
-Jammu,333493,2,Mix
-Kathua,119726,2,Mix
-Chamba,96261,2,Mix
-Kangra,309064,2,Mix
-Lahul,6066,2,Mix
-Kullu,82484,2,Mix
-Mandi,223029,2,Mix
-Hamirpur,99100,2,Mix
-Una,100262,2,Wheat
-Bilaspur,79797,2,Mix
-Solan,100611,1,Mix
-Sirmaur,92303,3,Mix
-Shimla,161067,3,Mix
-Kinnaur,17888,3,Mix
-Gurdaspur,336969,2,Wheat
-Amritsar,337777,2,Wheat
-Kapurthala,154511,2,Wheat
-Jalandhar,374216,2,Wheat
-Hoshiarpur,285328,2,Wheat
-Nawanshahr,129174,2,Wheat
-Rupnagar,126439,2,Wheat
-Fatehgarh,117989,2,Wheat
-Ludhiana,442857,2,Wheat
-Moga,151570,3,Wheat
-Firozpur,361616,2,Wheat
-Muktsar,159617,2,Wheat
-Faridkot,105313,2,Wheat
-Bathinda,253283,2,Wheat
-Mansa,140295,2,Wheat
-Sangrur,243775,2,Wheat
-Patiala,374308,2,Wheat
-SJAS Nagar (Mohali),117181,2,Wheat
-Barnala,107995,2,Wheat
-Tarn Taran,127667,2,Wheat
-Chandigarh,106128,2,Wheat
-Uttarkashi,68628,2,Mix
-Chamoli,91732,2,Mix
-Rudraprayag,52333,2,Mix
-Tehri,133868,3,Mix
-Dehradun,311287,2,Mix
-Garhwal,156422,2,Mix
-Pithoragarh,113502,2,Mix
-Bageshwar,59939,3,Mix
-Almora,128766,2,Mix
-Champawat,46374,2,Mix
-Nainital,83105,2,Mix
-Udham,258688,0,Mix
-Hardwar,303327,3,Wheat
-Nainital(Hills),49291,3,Mix
-Dehradun(Hills),15256,2,Mix
-Panchkula,80156,2,Wheat
-Ambala,180583,2,Wheat
-Yamunanagar,202259,2,Wheat
-Kurukshetra,189052,2,Wheat
-Kaithal,185716,2,Wheat
-Karnal,287189,2,Wheat
-Panipat,213295,2,Wheat
-Sonipat,289831,2,Wheat
-Jind,227777,2,Wheat
-Fatehabad,181382,2,Wheat
-Sirsa,245083,2,Wheat
-Hisar,347045,2,Wheat
-Bhiwani,298326,1,Wheat
-Rohtak,195086,2,Wheat
-Jhajjar,178674,2,Wheat
-Mahendragarh,219360,2,Wheat
-Rewari,171398,2,Wheat
-Gurgaon,172976,2,Wheat
-Faridabad,313606,2,Wheat
-Mewat,153941,2,Wheat
-North West Delhi,1045515,2,Wheat
-North Delhi,17556,2,Mix
-North East Delhi,127027,2,Wheat
-East Delhi,35173,2,Wheat
-New Delhi,35856,2,Wheat
-West Delhi,36008,2,Wheat
-South West Delhi,51975,2,Wheat
-South Delhi,101348,2,Wheat
-Ganganagar,335277,2,Wheat
-Hanumangarh,257057,2,Wheat
-Bikaner,334303,2,Wheat
-Churu,361934,1,Wheat
-Jhunjhunun,375885,2,Wheat
-Alwar,537493,1,Wheat
-Bharatpur,367205,1,Wheat
-Dhaulpur,197882,1,Wheat
-Karauli,211528,2,Wheat
-Sawai,213620,2,Wheat
-Dausa,223830,2,Wheat
-Jaipur,1179859,1,Wheat
-Sikar,432852,3,Wheat
-Nagaur,543832,1,Wheat
-Jodhpur,615901,1,Wheat
-Jaisalmer,100459,1,Wheat
-Barmer,424533,1,Wheat
-Jalor,303183,1,Wheat
-Sirohi,192148,2,Wheat
-Pali,350950,1,Wheat
-Ajmer,500627,1,Wheat
-Tonk,252267,2,Wheat
-Bundi,188208,2,Wheat
-Bhilwara,478587,1,Wheat
-Rajsamand,203586,2,Wheat
-Udaipur,508457,2,Wheat
-Dungarpur,239502,2,Wheat
-Banswara,333355,2,Wheat
-Chittaurgarh,438706,2,Wheat
-Kota,271583,2,Wheat
-Baran,206353,2,Wheat
-Jhalawar,240151,2,Wheat
-Saharanpur,499782,2,Wheat
-Muzaffarnagar,659511,3,Wheat
-Bijnor,437566,3,Mix
-Moradabad,608924,2,Mix
-Rampur,249160,2,Mix
-Jyotiba Phule Nagar,195700,3,Wheat
-Meerut,619758,2,Wheat
-Baghpat,192749,3,Wheat
-Ghaziabad,512572,2,Wheat
-Gautam Buddha Nagar,185297,2,Wheat
-Bulandshahar,514368,2,Wheat
-Aligarh,677796,1,Wheat
-Hathras,274921,2,Wheat
-Mathura,354764,2,Wheat
-Agra,632743,2,Wheat
-Firozabad,283395,2,Wheat
-Etah,238796,2,Wheat
-Mainpuri,187107,2,Wheat
-Budaun,468555,2,Mix
-Bareilly,627172,2,Mix
-Pilibhit,305142,2,Mix
-Shahjahanpur,452359,2,Mix
-Kheri,543098,3,Mix
-Sitapur,683266,3,Mix
-Hardoi,511474,3,Mix
-Unnao,492296,3,Mix
-Lucknow,594661,2,Mix
-Rae Bareli,550067,3,Mix
-Farrukhabad,203709,2,Wheat
-Kannauj,214209,2,Wheat
-Etawah,207865,2,Wheat
-Auraiya,212749,2,Wheat
-Kanpur Dehat,298648,2,Wheat
-Kanpur Nagar,517255,3,Wheat
-Jalaun,268192,3,Wheat
-Jhansi,331664,3,Wheat
-Lalitpur,215956,3,Wheat
-Hamirpur,221556,2,Wheat
-Mahoba,150912,2,Wheat
-Banda,249192,3,Wheat
-Chitrakoot,113286,2,Wheat
-Fatehpur,477622,2,Wheat
-Pratapgarh,466528,3,Mix
-Kaushambi,255882,2,Mix
-Allahabad,867136,3,Mix
-Barabanki,495081,3,Mix
-Faizabad,256880,3,Mix
-Ambedkar Nagar,301766,3,Mix
-Sultanpur,496434,3,Mix
-Bahraich,241616,3,Mix
-Shrawasti,84028,3,Mix
-Balrampur,236508,3,Mix
-Gonda,343481,2,Mix
-Siddharthnagar,274980,3,Mix
-Basti,277373,3,Mix
-Sant Kabir Nagar,240750,3,Mix
-Mahrajganj,340961,3,Mix
-Gorakhpur,656257,3,Mix
-Kushinagar,431918,3,Mix
-Deoria,407677,3,Mix
-Azamgarh,526092,3,Mix
-Mau,290751,3,Mix
-Ballia,334787,3,Mix
-Jaunpur,646139,3,Mix
-Ghazipur,430787,3,Mix
-Chandauli,253775,3,Mix
-Varanasi,521186,3,Mix
-Sant Ravidas Nagar,193098,3,Mix
-Mirzapur,302683,3,Mix
-Sonbhadra,226918,3,Mix
-Kashiramnagar,182972,2,Wheat
-Pashchim Champaran,466369,0,Mix
-Purba Champaran,926901,2,Mix
-Sheohar,114726,0,Mix
-Sitamarhi,533857,0,Mix
-Madhubani,668127,2,Mix
-Supaul,319367,0,Mix
-Araria,402950,0,Mix
-Kishanganj,323935,2,Mix
-Purnia,527405,0,Mix
-Katihar,478722,2,Mix
-Madhepura,368391,0,Mix
-Saharsa,311804,3,Mix
-Darbhanga,530289,0,Mix
-Muzaffarpur,717744,0,Mix
-Gopalganj,446952,0,Mix
-Siwan,540951,0,Mix
-Saran,520373,3,Mix
-Vaishali,435057,3,Mix
-Samastipur,599861,0,Mix
-Begusarai,462996,2,Mix
-Khagaria,289804,0,Mix
-Bhagalpur,462374,3,Mix
-Banka,350280,3,Mix
-Munger,280093,3,Mix
-Lakhisarai,174940,3,Mix
-Sheikhpura,99400,3,Mix
-Nalanda,285633,0,Mix
-Patna,465671,3,Mix
-Bhojpur,360975,3,Mix
-Buxar,197797,0,Mix
-Kaimur (Bhabua),186429,3,Mix
-Rohtas,392390,0,Mix
-Jehanabad,164853,0,Mix
-Aurangabad,351137,0,Mix
-Gaya,641568,0,Mix
-Nawada,283820,0,Mix
-Jamui,303508,3,Mix
-Arwal,106823,4,Mix
-North Sikkim,7202,0,Rice
-West Sikkim,26804,0,Rice
-South Sikkim,27179,0,Rice
-East Sikkim,42884,2,Rice
-Tawang,9856,0,Rice
-West Kameng,13066,3,Rice
-East  Kameng,9847,0,Rice
-Papum Pare,15396,0,Rice
-Lower Subansiri,6663,0,Rice
-Upper Subansiri,11895,3,Rice
-West Siang,20456,2,Rice
-East Siang,15703,3,Rice
-Upper Siang,4470,0,Rice
-Dibang Valley,780,0,Rice
-Lohit,25344,0,Rice
-Changlang,14495,0,Rice
-Tirap,15462,4,Rice
-Anjaw,3559,0,Rice
-Kurungkumey,7850,0,Rice
-Lower Dibang Valley,5474,0,Rice
-Mon,6284,0,Rice
-Tuensang,5341,0,Rice
-Mokokchung,19449,0,Rice
-Zunheboto,3404,0,Rice
-Wokha,9197,0,Rice
-Dimapur,14817,3,Rice
-Kohima,9521,0,Rice
-Phek,9285,0,Rice
-Kiphire,976,0,Rice
-Longleng,8141,0,Rice
-Peren,5971,0,Rice
-Senapati,12189,2,Rice
-Tamenglong,4695,3,Rice
-Churachandpur,29935,0,Rice
-Bishnupur,34480,2,Rice
-Thoubal,44651,2,Rice
-Imphal West,38228,2,Rice
-Imphal East,61897,2,Rice
-Ukhrul,8934,3,Rice
-Chandel,6593,0,Rice
-Mamit,18038,0,Rice
-Kolasib,13815,0,Mix
-Aizawl,63467,3,Rice
-Champhai,20826,0,Rice
-Serchhip,13660,0,Rice
-Lunglei,32328,3,Rice
-Lawngtlai,19094,0,Rice
-Saiha,13722,0,Rice
-West Tripura,380614,2,Rice
-South Tripura,195890,0,Rice
-Dhalai,79854,0,Rice
-North Tripura,167050,0,Rice
-West Garo Hills,84101,0,Rice
-East Garo Hills,34411,3,Rice
-South Garo Hills,17397,0,Rice
-West Khasi Hills,49290,2,Rice
-Ri Bhoi,32101,2,Rice
-East Khasi Hills,103265,0,Rice
-Jaintia Hills,51380,2,Rice
-Kokrajhar,156501,0,Rice
-Dhubri,300022,0,Rice
-Goalpara,173941,0,Rice
-Bongaigaon,84557,0,Rice
-Barpeta,285050,0,Rice
-Kamrup,278513,0,Rice
-Nalbari,101128,0,Rice
-Darrang,122505,0,Rice
-Marigaon,134725,2,Rice
-Nagaon,363515,0,Rice
-Sonitpur,247576,0,Rice
-Lakhimpur,161461,0,Rice
-Dhemaji,103509,0,Rice
-Tinsukia,111408,0,Rice
-Dibrugarh,106791,0,Rice
-Sibsagar,197194,0,Rice
-Jorhat,153921,0,Rice
-Golaghat,198689,2,Rice
-Karbi Anglong,167735,0,Rice
-North Cachar Hills,37313,0,Rice
-Cachar,311613,0,Rice
-Karimganj,229987,0,Rice
-Hailakandi,93585,0,Rice
-Chirag,83053,0,Rice
-Baksa,63086,0,Rice
-Guwahati,116467,0,Rice
-Udalguri,126686,0,Rice
-Darjiling,374535,2,Rice
-Jalpaiguri,704866,2,Rice
-Koch,613403,2,Rice
-Uttar Dinajpur,550184,2,Rice
-Dakshin Dinajpur,374375,2,Rice
-Maldah,835232,2,Rice
-Murshidabad,1525335,2,Rice
-Birbhum,749356,0,Rice
-Barddhaman,1489219,2,Rice
-Nadia,1177719,2,Rice
-North Twenty Four Parganas,2300197,0,Rice
-Hugli,1218440,2,Rice
-Bankura,771869,2,Rice
-Puruliya,497137,2,Rice
-Pashim,1200494,3,Rice
-Howrah,1083087,0,Mix
-Kolkata,1060914,2,Rice
-South Twenty Four Parganas,1780210,0,Rice
-Purba Midanapur,1197064,2,Rice
-Garhwa,97298,3,Rice
-Palamu,107935,3,Rice
-Chatra,70311,2,Mix
-Hazaribagh,275938,2,Mix
-Kodarma,63146,2,Mix
-Giridih,290831,2,Mix
-Deoghar,129028,0,Mix
-Godda,195083,2,Rice
-Sahibganj,49499,2,Rice
-Pakaur,109794,0,Mix
-Dumka,197943,0,Mix
-Dhanbad,156871,2,Mix
-Bokaro,171895,2,Mix
-Ranchi,266752,2,Mix
-Lohardaga,55864,3,Rice
-Gumla,92253,2,Rice
-Pashchimi Singhbum,172374,2,Rice
-Purbi Singhbum,154080,0,Mix
-Latehar,73820,3,Mix
-Simdega,52566,3,Rice
-Jamtara,127333,2,Mix
-Seraikela-kharsawan,114283,2,Rice
-Bargarh,254276,0,Rice
-Jharsuguda,78437,0,Rice
-Sambalpur,142855,2,Rice
-Debagarh,47698,2,Rice
-Sundargarh,288154,2,Rice
-Kendujhar,248128,2,Rice
-Mayurbhanj,357146,2,Rice
-Baleshwar,426827,2,Rice
-Bhadrak,168180,2,Rice
-Kendrapara,253718,0,Rice
-Jagatsinghapur,175376,0,Rice
-Cuttack,353159,0,Rice
-Jajapur,261008,0,Rice
-Dhenkanal,181554,3,Rice
-Anugul,123017,0,Rice
-Nayagarh,151813,2,Rice
-Khordha,258098,2,Rice
-Puri,285121,2,Rice
-Ganjam,396543,0,Rice
-Gajapati,88755,2,Rice
-Kandhamal,129562,2,Rice
-Baudh,67840,0,Rice
-Sonapur,108892,2,Rice
-Balangir,274744,2,Rice
-Nuapada,74210,3,Rice
-Kalahandi,233872,3,Rice
-Rayagada,108097,2,Rice
-Nabarangapur,168168,0,Rice
-Koraput,207930,2,Rice
-Malkangiri,95124,3,Rice
-Koriya,117865,2,Rice
-Surguja,394193,2,Rice
-Jashpur,162291,3,Rice
-Raigarh,229646,3,Rice
-Korba,215396,3,Rice
-Janjgir,201191,3,Rice
-Bilaspur,311081,3,Rice
-Kawardha,99502,3,Rice
-Rajnandgaon,279274,3,Rice
-Durg,452426,3,Rice
-Raipur,568808,3,Rice
-Mahasamund,183788,3,Rice
-Dhamtari,121846,3,Rice
-Kanker,120773,3,Rice
-Bastar,212225,3,Rice
-Dantewada*,108623,3,Mix
-Narayanpur,16513,3,Rice
-Bijapur,1644,2,Mix
-Sheopur,130399,2,Wheat
-Morena,257955,2,Wheat
-Bhind,260878,2,Wheat
-Gwalior,237330,2,Wheat
-Datia,138567,2,Wheat
-Shivpuri,279817,2,Wheat
-Guna,173795,2,Wheat
-Tikamgarh,240686,2,Wheat
-Chhatarpur,305327,2,Wheat
-Panna,150246,2,Mix
-Sagar,320387,3,Wheat
-Damoh,145985,2,Wheat
-Satna,316905,3,Mix
-Rewa,350460,3,Mix
-Umaria,99369,2,Mix
-Shahdol,169447,3,Mix
-Sidhi,270141,3,Mix
-Neemuch,134335,2,Wheat
-Mandsaur,160021,2,Wheat
-Ratlam,208753,2,Wheat
-Ujjain,293311,2,Wheat
-Shajapur,267907,2,Wheat
-Dewas,199743,2,Wheat
-Jhabua,197961,2,Wheat
-Dhar,342191,1,Wheat
-Indore,325840,2,Wheat
-West Nimar,303886,2,Wheat
-Barwani,226334,1,Wheat
-East Nimar,214605,1,Wheat
-Rajgarh,330242,2,Wheat
-Vidisha,187587,2,Wheat
-Bhopal,239672,2,Wheat
-Sehore,158711,2,Wheat
-Raisen,245263,3,Wheat
-Betul,313027,0,Wheat
-Harda,83549,2,Wheat
-Hoshangabad,189056,2,Wheat
-Katni,241731,3,Mix
-Jabalpur,321800,2,Mix
-Narsimhapur,151287,2,Wheat
-Dindori,134146,0,Mix
-Mandla,180483,2,Mix
-Chhindwara,372107,3,Wheat
-Seoni,279419,3,Mix
-Balaghat,299452,2,Rice
-Ashoknagar,164988,2,Wheat
-Anuppur,138010,0,Mix
-Burhanpur,133181,2,Wheat
-Alirajpur,105711,3,Wheat
-Singrauli,119763,3,Mix
-Kachchh,425126,1,Wheat
-Banas,484763,1,Wheat
-Patan,224837,1,Wheat
-Mahesana,318821,1,Wheat
-Sabar,382831,2,Mix
-Gandhinagar,222654,2,Wheat
-Ahmadabad,1142711,2,Wheat
-Surendranagar,297723,1,Wheat
-Rajkot,642070,2,Wheat
-Jamnagar,330467,2,Wheat
-Porbandar,96589,1,Wheat
-Junagadh,434215,2,Wheat
-Amreli,230331,2,Wheat
-Bhavnagar,505485,2,Wheat
-Anand,316190,1,Mix
-Kheda,305814,2,Mix
-Panch Mahals,396840,1,Mix
-Dohad,304866,2,Mix
-Vadodara,755550,1,Mix
-Narmada,113842,1,Mix
-Bharuch,236014,2,Mix
-Surat,931621,2,Mix
-The Dangs,47535,4,Mix
-Navsari,313425,4,Mix
-Valsad,307241,4,Mix
-Diu,13432,2,Mix
-Daman,11085,2,Mix
-Dadra & Nagar Haveli,40038,4,Mix
-Nandurbar,243854,2,Mix
-Dhule,341147,2,Mix
-Jalgaon,661181,2,Wheat
-Buldana,447458,2,Wheat
-Akola,286364,2,Wheat
-Washim,204451,2,Wheat
-Amravati,523707,2,Wheat
-Wardha,264152,2,Mix
-Nagpur,844338,2,Mix
-Bhandara,209647,2,Mix
-Gondiya,224580,2,Rice
-Gadchiroli,230253,2,Mix
-Chandrapur,415976,2,Mix
-Yavatmal,477198,2,Wheat
-Nanded,403518,1,Mix
-Hingoli,136819,2,Wheat
-Parbhani,163336,2,Wheat
-Jalna,241440,2,Wheat
-Aurangabad,358608,2,Wheat
-Nashik,948920,4,Wheat
-Thane,1911751,4,Mix
-Mumbai,2246823,2,Mix
-Raigarh,496488,4,Rice
-Pune,1762043,1,Mix
-Ahmadnagar,841251,4,Wheat
-Bid,386360,2,Wheat
-Latur,346128,2,Mix
-Osmanabad,257081,2,Wheat
-Solapur,735647,1,Mix
-Satara,626555,4,Mix
-Ratnagiri,383215,4,Mix
-Sindhudurg,184316,2,Mix
-Kolhapur,666459,4,Mix
-Sangli,502444,2,Mix
-Adilabad,537226,2,Rice
-Nizamabad,514289,2,Rice
-Karimnagar,954737,2,Rice
-Medak,556944,2,Rice
-Hyderabad and Rangar,1382552,2,Rice
-Rangareddi,419502,2,Rice
-Mahbubnagar,688751,2,Rice
-Nalgonda,763013,2,Rice
-Warangal,858923,2,Rice
-Khammam,687428,2,Rice
-Srikakulam,643134,2,Rice
-Vizianagaram,559955,2,Rice
-Visakhapatnam,969395,2,Rice
-East Godavari,1319255,2,Rice
-West Godavari,934781,2,Rice
-Krishna,1156859,0,Rice
-Guntur,1081727,2,Rice
-Prakasam,745913,2,Rice
-Nellore,585811,2,Rice
-Cuddapah,612159,2,Rice
-Kurnool,793699,2,Rice
-Anantapur,872592,0,Rice
-Chittoor,872673,2,Rice
-Belgaum,824330,2,Mix
-Bagalkot,329692,2,Mix
-Bijapur,315949,2,Mix
-Gulbarga,456801,2,Rice
-Bidar,237877,2,Rice
-Raichur,277166,1,Rice
-Koppal,233343,2,Rice
-Gadag,182296,2,Rice
-Dharwad,233960,0,Rice
-Uttara,259476,2,Rice
-Haveri,303873,2,Rice
-Bellary,385767,2,Rice
-Chitradurga,267347,4,Rice
-Davanagere,382070,2,Rice
-Shimoga,365640,2,Rice
-Udupi,163068,2,Rice
-Chikmagalur,265689,2,Rice
-Tumkur,509514,4,Rice
-Kolar,281667,4,Rice
-Bangalore,994832,4,Rice
-Bangalore Rural,159857,4,Rice
-Mandya,402216,4,Rice
-Hassan,332670,4,Rice
-Dakshina Kannada,323586,2,Rice
-Kodagu,98827,2,Rice
-Mysore,519404,4,Rice
-Chamarajanagar,216424,4,Rice
-Ramanagar,194949,4,Rice
-Chikkaballapura,220218,4,Rice
-North Goa,174850,2,Rice
-South Goa,135355,2,Rice
-Lakshadweep,9606,0,Rice
-Kasaragod,224991,2,Rice
-Kannur,467915,2,Rice
-Wayanad,167647,2,Rice
-Kozhikode,617861,2,Rice
-Malappuram,713806,2,Rice
-Palakkad,599013,2,Rice
-Thrissur,668590,2,Rice
-Ernakulam,702139,2,Rice
-Idukki,281194,0,Rice
-Kottayam,402990,2,Rice
-Alappuzha,497774,2,Rice
-Pathanamthitta,291480,2,Rice
-Kollam,637472,2,Rice
-Thiruvananthapuram,697990,2,Rice
-Thiruvallur,863083,2,Rice
-Chennai,1001630,2,Rice
-Kancheepuram,949470,2,Rice
-Vellore,772290,2,Rice
-Dharmapuri,371656,2,Rice
-Tiruvannamalai,567880,2,Rice
-Viluppuram,721674,2,Rice
-Salem,804050,2,Rice
-Namakkal,436865,2,Rice
-Erode,733302,2,Rice
-The Nilgiris,171743,2,Rice
-Coimbatore,1268023,2,Rice
-Dindigul,521850,2,Rice
-Karur,274435,2,Rice
-Tiruchirappalli,605682,2,Rice
-Perambalur,141437,2,Rice
-Ariyalur,218883,2,Rice
-Cuddalore,556259,2,Rice
-Nagapattinam,354606,0,Rice
-Thiruvarur,278103,2,Rice
-Thanjavur,564905,2,Rice
-Pudukkottai,360923,2,Rice
-Sivaganga,341056,2,Rice
-Madurai,674462,2,Rice
-Theni,281851,2,Rice
-Virudhunagar,468405,2,Rice
-Ramanathapuram,303284,2,Rice
-Thoothukkudi,374518,2,Rice
-Tirunelveli,770481,2,Rice
-Kanniyakumari,398092,2,Rice
-Krishnagiri,330718,2,Rice
-Yanam,12394,2,Rice
-Pondicherry,207969,2,Rice
-Mahe,4688,2,Rice
-Karaikal,39292,2,Rice
-South Andamans,46675,2,Rice
-Nicobars,5244,0,Rice
-North and Middle Andamans,23851,2,Rice
+Kupwara,85772,2,Rice
+Baramula,163437,4,Rice
+Srinagar,166121,1,Rice
+Badgam,84411,2,Rice
+Pulwama,99548,1,Rice
+Anantnag,172110,2,Rice
+Leh,14878,1,Mix
+Kargil,21566,1,Rice
+Doda,131199,1,Mix
+Udhampur,161985,1,Mix
+Punch,72512,1,Mix
+Rajauri,95340,4,Mix
+Jammu,333493,1,Mix
+Kathua,119726,1,Mix
+Chamba,96261,1,Mix
+Kangra,309064,1,Mix
+Lahul,6066,1,Mix
+Kullu,82484,1,Mix
+Mandi,223029,1,Mix
+Hamirpur,99100,1,Mix
+Una,100262,1,Wheat
+Bilaspur,79797,1,Mix
+Solan,100611,0,Mix
+Sirmaur,92303,4,Mix
+Shimla,161067,4,Mix
+Kinnaur,17888,4,Mix
+Gurdaspur,336969,1,Wheat
+Amritsar,337777,1,Wheat
+Kapurthala,154511,1,Wheat
+Jalandhar,374216,1,Wheat
+Hoshiarpur,285328,1,Wheat
+Nawanshahr,129174,1,Wheat
+Rupnagar,126439,1,Wheat
+Fatehgarh,117989,1,Wheat
+Ludhiana,442857,1,Wheat
+Moga,151570,1,Wheat
+Firozpur,361616,1,Wheat
+Muktsar,159617,1,Wheat
+Faridkot,105313,1,Wheat
+Bathinda,253283,1,Wheat
+Mansa,140295,1,Wheat
+Sangrur,243775,1,Wheat
+Patiala,374308,1,Wheat
+SJAS Nagar (Mohali),117181,1,Wheat
+Barnala,107995,1,Wheat
+Tarn Taran,127667,1,Wheat
+Chandigarh,106128,1,Wheat
+Uttarkashi,68628,1,Mix
+Chamoli,91732,1,Mix
+Rudraprayag,52333,1,Mix
+Tehri,133868,4,Mix
+Dehradun,311287,1,Mix
+Garhwal,156422,1,Mix
+Pithoragarh,113502,1,Mix
+Bageshwar,59939,4,Mix
+Almora,128766,1,Mix
+Champawat,46374,1,Mix
+Nainital,83105,1,Mix
+Udham,258688,2,Mix
+Hardwar,303327,4,Wheat
+Nainital(Hills),49291,4,Mix
+Dehradun(Hills),15256,1,Mix
+Panchkula,80156,1,Wheat
+Ambala,180583,1,Wheat
+Yamunanagar,202259,1,Wheat
+Kurukshetra,189052,1,Wheat
+Kaithal,185716,1,Wheat
+Karnal,287189,1,Wheat
+Panipat,213295,1,Wheat
+Sonipat,289831,1,Wheat
+Jind,227777,1,Wheat
+Fatehabad,181382,1,Wheat
+Sirsa,245083,1,Wheat
+Hisar,347045,1,Wheat
+Bhiwani,298326,0,Wheat
+Rohtak,195086,1,Wheat
+Jhajjar,178674,1,Wheat
+Mahendragarh,219360,1,Wheat
+Rewari,171398,1,Wheat
+Gurgaon,172976,1,Wheat
+Faridabad,313606,1,Wheat
+Mewat,153941,1,Wheat
+North West Delhi,1045515,1,Wheat
+North Delhi,17556,1,Mix
+North East Delhi,127027,1,Wheat
+East Delhi,35173,1,Wheat
+New Delhi,35856,1,Wheat
+West Delhi,36008,1,Wheat
+South West Delhi,51975,1,Wheat
+South Delhi,101348,1,Wheat
+Ganganagar,335277,1,Wheat
+Hanumangarh,257057,1,Wheat
+Bikaner,334303,1,Wheat
+Churu,361934,0,Wheat
+Jhunjhunun,375885,1,Wheat
+Alwar,537493,0,Wheat
+Bharatpur,367205,0,Wheat
+Dhaulpur,197882,0,Wheat
+Karauli,211528,1,Wheat
+Sawai,213620,1,Wheat
+Dausa,223830,1,Wheat
+Jaipur,1179859,0,Wheat
+Sikar,432852,0,Wheat
+Nagaur,543832,0,Wheat
+Jodhpur,615901,0,Wheat
+Jaisalmer,100459,0,Wheat
+Barmer,424533,0,Wheat
+Jalor,303183,0,Wheat
+Sirohi,192148,1,Wheat
+Pali,350950,0,Wheat
+Ajmer,500627,0,Wheat
+Tonk,252267,1,Wheat
+Bundi,188208,1,Wheat
+Bhilwara,478587,0,Wheat
+Rajsamand,203586,1,Wheat
+Udaipur,508457,1,Wheat
+Dungarpur,239502,1,Wheat
+Banswara,333355,1,Wheat
+Chittaurgarh,438706,1,Wheat
+Kota,271583,1,Wheat
+Baran,206353,1,Wheat
+Jhalawar,240151,1,Wheat
+Saharanpur,499782,1,Wheat
+Muzaffarnagar,659511,4,Wheat
+Bijnor,437566,4,Mix
+Moradabad,608924,1,Mix
+Rampur,249160,1,Mix
+Jyotiba Phule Nagar,195700,4,Wheat
+Meerut,619758,1,Wheat
+Baghpat,192749,4,Wheat
+Ghaziabad,512572,1,Wheat
+Gautam Buddha Nagar,185297,1,Wheat
+Bulandshahar,514368,1,Wheat
+Aligarh,677796,0,Wheat
+Hathras,274921,1,Wheat
+Mathura,354764,1,Wheat
+Agra,632743,1,Wheat
+Firozabad,283395,1,Wheat
+Etah,238796,1,Wheat
+Mainpuri,187107,1,Wheat
+Budaun,468555,1,Mix
+Bareilly,627172,1,Mix
+Pilibhit,305142,1,Mix
+Shahjahanpur,452359,1,Mix
+Kheri,543098,4,Mix
+Sitapur,683266,4,Mix
+Hardoi,511474,4,Mix
+Unnao,492296,4,Mix
+Lucknow,594661,1,Mix
+Rae Bareli,550067,4,Mix
+Farrukhabad,203709,1,Wheat
+Kannauj,214209,1,Wheat
+Etawah,207865,1,Wheat
+Auraiya,212749,1,Wheat
+Kanpur Dehat,298648,1,Wheat
+Kanpur Nagar,517255,4,Wheat
+Jalaun,268192,4,Wheat
+Jhansi,331664,4,Wheat
+Lalitpur,215956,4,Wheat
+Hamirpur,221556,1,Wheat
+Mahoba,150912,1,Wheat
+Banda,249192,4,Wheat
+Chitrakoot,113286,1,Wheat
+Fatehpur,477622,1,Wheat
+Pratapgarh,466528,4,Mix
+Kaushambi,255882,1,Mix
+Allahabad,867136,4,Mix
+Barabanki,495081,4,Mix
+Faizabad,256880,4,Mix
+Ambedkar Nagar,301766,4,Mix
+Sultanpur,496434,4,Mix
+Bahraich,241616,4,Mix
+Shrawasti,84028,4,Mix
+Balrampur,236508,4,Mix
+Gonda,343481,1,Mix
+Siddharthnagar,274980,4,Mix
+Basti,277373,4,Mix
+Sant Kabir Nagar,240750,4,Mix
+Mahrajganj,340961,4,Mix
+Gorakhpur,656257,4,Mix
+Kushinagar,431918,4,Mix
+Deoria,407677,4,Mix
+Azamgarh,526092,4,Mix
+Mau,290751,4,Mix
+Ballia,334787,4,Mix
+Jaunpur,646139,4,Mix
+Ghazipur,430787,4,Mix
+Chandauli,253775,4,Mix
+Varanasi,521186,4,Mix
+Sant Ravidas Nagar,193098,4,Mix
+Mirzapur,302683,4,Mix
+Sonbhadra,226918,4,Mix
+Kashiramnagar,182972,1,Wheat
+Pashchim Champaran,466369,2,Mix
+Purba Champaran,926901,1,Mix
+Sheohar,114726,2,Mix
+Sitamarhi,533857,2,Mix
+Madhubani,668127,1,Mix
+Supaul,319367,2,Mix
+Araria,402950,1,Mix
+Kishanganj,323935,1,Mix
+Purnia,527405,2,Mix
+Katihar,478722,1,Mix
+Madhepura,368391,2,Mix
+Saharsa,311804,4,Mix
+Darbhanga,530289,2,Mix
+Muzaffarpur,717744,2,Mix
+Gopalganj,446952,4,Mix
+Siwan,540951,2,Mix
+Saran,520373,4,Mix
+Vaishali,435057,4,Mix
+Samastipur,599861,2,Mix
+Begusarai,462996,1,Mix
+Khagaria,289804,2,Mix
+Bhagalpur,462374,4,Mix
+Banka,350280,4,Mix
+Munger,280093,4,Mix
+Lakhisarai,174940,4,Mix
+Sheikhpura,99400,4,Mix
+Nalanda,285633,2,Mix
+Patna,465671,4,Mix
+Bhojpur,360975,4,Mix
+Buxar,197797,2,Mix
+Kaimur (Bhabua),186429,4,Mix
+Rohtas,392390,4,Mix
+Jehanabad,164853,2,Mix
+Aurangabad,351137,2,Mix
+Gaya,641568,2,Mix
+Nawada,283820,2,Mix
+Jamui,303508,4,Mix
+Arwal,106823,3,Mix
+North Sikkim,7202,2,Rice
+West Sikkim,26804,2,Rice
+South Sikkim,27179,2,Rice
+East Sikkim,42884,1,Rice
+Tawang,9856,2,Rice
+West Kameng,13066,4,Rice
+East  Kameng,9847,2,Rice
+Papum Pare,15396,2,Rice
+Lower Subansiri,6663,2,Rice
+Upper Subansiri,11895,4,Rice
+West Siang,20456,1,Rice
+East Siang,15703,4,Rice
+Upper Siang,4470,2,Rice
+Dibang Valley,780,2,Rice
+Lohit,25344,2,Rice
+Changlang,14495,2,Rice
+Tirap,15462,3,Rice
+Anjaw,3559,2,Rice
+Kurungkumey,7850,2,Rice
+Lower Dibang Valley,5474,2,Rice
+Mon,6284,2,Rice
+Tuensang,5341,2,Rice
+Mokokchung,19449,2,Rice
+Zunheboto,3404,2,Rice
+Wokha,9197,2,Rice
+Dimapur,14817,2,Rice
+Kohima,9521,2,Rice
+Phek,9285,2,Rice
+Kiphire,976,2,Rice
+Longleng,8141,2,Rice
+Peren,5971,2,Rice
+Senapati,12189,1,Rice
+Tamenglong,4695,4,Rice
+Churachandpur,29935,2,Rice
+Bishnupur,34480,1,Rice
+Thoubal,44651,1,Rice
+Imphal West,38228,1,Rice
+Imphal East,61897,1,Rice
+Ukhrul,8934,4,Rice
+Chandel,6593,2,Rice
+Mamit,18038,2,Rice
+Kolasib,13815,2,Mix
+Aizawl,63467,4,Rice
+Champhai,20826,2,Rice
+Serchhip,13660,2,Rice
+Lunglei,32328,4,Rice
+Lawngtlai,19094,2,Rice
+Saiha,13722,2,Rice
+West Tripura,380614,1,Rice
+South Tripura,195890,2,Rice
+Dhalai,79854,2,Rice
+North Tripura,167050,2,Rice
+West Garo Hills,84101,2,Rice
+East Garo Hills,34411,4,Rice
+South Garo Hills,17397,2,Rice
+West Khasi Hills,49290,1,Rice
+Ri Bhoi,32101,1,Rice
+East Khasi Hills,103265,2,Rice
+Jaintia Hills,51380,1,Rice
+Kokrajhar,156501,2,Rice
+Dhubri,300022,2,Rice
+Goalpara,173941,2,Rice
+Bongaigaon,84557,2,Rice
+Barpeta,285050,2,Rice
+Kamrup,278513,2,Rice
+Nalbari,101128,2,Rice
+Darrang,122505,1,Rice
+Marigaon,134725,1,Rice
+Nagaon,363515,2,Rice
+Sonitpur,247576,2,Rice
+Lakhimpur,161461,2,Rice
+Dhemaji,103509,2,Rice
+Tinsukia,111408,2,Rice
+Dibrugarh,106791,2,Rice
+Sibsagar,197194,2,Rice
+Jorhat,153921,1,Rice
+Golaghat,198689,1,Rice
+Karbi Anglong,167735,2,Rice
+North Cachar Hills,37313,2,Rice
+Cachar,311613,2,Rice
+Karimganj,229987,2,Rice
+Hailakandi,93585,2,Rice
+Chirag,83053,2,Rice
+Baksa,63086,2,Rice
+Guwahati,116467,2,Rice
+Udalguri,126686,2,Rice
+Darjiling,374535,1,Rice
+Jalpaiguri,704866,1,Rice
+Koch,613403,1,Rice
+Uttar Dinajpur,550184,1,Rice
+Dakshin Dinajpur,374375,1,Rice
+Maldah,835232,1,Rice
+Murshidabad,1525335,1,Rice
+Birbhum,749356,1,Rice
+Barddhaman,1489219,1,Rice
+Nadia,1177719,1,Rice
+North Twenty Four Parganas,2300197,2,Rice
+Hugli,1218440,1,Rice
+Bankura,771869,1,Rice
+Puruliya,497137,1,Rice
+Pashim,1200494,4,Rice
+Howrah,1083087,1,Mix
+Kolkata,1060914,1,Rice
+South Twenty Four Parganas,1780210,2,Rice
+Purba Midanapur,1197064,1,Rice
+Garhwa,97298,4,Rice
+Palamu,107935,4,Rice
+Chatra,70311,1,Mix
+Hazaribagh,275938,1,Mix
+Kodarma,63146,1,Mix
+Giridih,290831,1,Mix
+Deoghar,129028,2,Mix
+Godda,195083,1,Rice
+Sahibganj,49499,1,Rice
+Pakaur,109794,2,Mix
+Dumka,197943,2,Mix
+Dhanbad,156871,1,Mix
+Bokaro,171895,1,Mix
+Ranchi,266752,1,Mix
+Lohardaga,55864,4,Rice
+Gumla,92253,1,Rice
+Pashchimi Singhbum,172374,1,Rice
+Purbi Singhbum,154080,1,Mix
+Latehar,73820,4,Mix
+Simdega,52566,4,Rice
+Jamtara,127333,1,Mix
+Seraikela-kharsawan,114283,1,Rice
+Bargarh,254276,2,Rice
+Jharsuguda,78437,1,Rice
+Sambalpur,142855,1,Rice
+Debagarh,47698,1,Rice
+Sundargarh,288154,1,Rice
+Kendujhar,248128,1,Rice
+Mayurbhanj,357146,1,Rice
+Baleshwar,426827,1,Rice
+Bhadrak,168180,1,Rice
+Kendrapara,253718,2,Rice
+Jagatsinghapur,175376,2,Rice
+Cuttack,353159,1,Rice
+Jajapur,261008,2,Rice
+Dhenkanal,181554,4,Rice
+Anugul,123017,2,Rice
+Nayagarh,151813,1,Rice
+Khordha,258098,1,Rice
+Puri,285121,1,Rice
+Ganjam,396543,2,Rice
+Gajapati,88755,1,Rice
+Kandhamal,129562,1,Rice
+Baudh,67840,2,Rice
+Sonapur,108892,1,Rice
+Balangir,274744,1,Rice
+Nuapada,74210,4,Rice
+Kalahandi,233872,4,Rice
+Rayagada,108097,1,Rice
+Nabarangapur,168168,4,Rice
+Koraput,207930,1,Rice
+Malkangiri,95124,4,Rice
+Koriya,117865,1,Rice
+Surguja,394193,1,Rice
+Jashpur,162291,4,Rice
+Raigarh,229646,4,Rice
+Korba,215396,4,Rice
+Janjgir,201191,4,Rice
+Bilaspur,311081,4,Rice
+Kawardha,99502,4,Rice
+Rajnandgaon,279274,4,Rice
+Durg,452426,4,Rice
+Raipur,568808,4,Rice
+Mahasamund,183788,4,Rice
+Dhamtari,121846,4,Rice
+Kanker,120773,4,Rice
+Bastar,212225,4,Rice
+Dantewada*,108623,4,Mix
+Narayanpur,16513,4,Rice
+Bijapur,1644,1,Mix
+Sheopur,130399,1,Wheat
+Morena,257955,1,Wheat
+Bhind,260878,1,Wheat
+Gwalior,237330,1,Wheat
+Datia,138567,1,Wheat
+Shivpuri,279817,1,Wheat
+Guna,173795,1,Wheat
+Tikamgarh,240686,1,Wheat
+Chhatarpur,305327,1,Wheat
+Panna,150246,1,Mix
+Sagar,320387,4,Wheat
+Damoh,145985,1,Wheat
+Satna,316905,4,Mix
+Rewa,350460,4,Mix
+Umaria,99369,1,Mix
+Shahdol,169447,4,Mix
+Sidhi,270141,4,Mix
+Neemuch,134335,1,Wheat
+Mandsaur,160021,1,Wheat
+Ratlam,208753,1,Wheat
+Ujjain,293311,1,Wheat
+Shajapur,267907,1,Wheat
+Dewas,199743,1,Wheat
+Jhabua,197961,1,Wheat
+Dhar,342191,0,Wheat
+Indore,325840,1,Wheat
+West Nimar,303886,1,Wheat
+Barwani,226334,0,Wheat
+East Nimar,214605,0,Wheat
+Rajgarh,330242,1,Wheat
+Vidisha,187587,1,Wheat
+Bhopal,239672,1,Wheat
+Sehore,158711,1,Wheat
+Raisen,245263,4,Wheat
+Betul,313027,2,Wheat
+Harda,83549,1,Wheat
+Hoshangabad,189056,1,Wheat
+Katni,241731,4,Mix
+Jabalpur,321800,1,Mix
+Narsimhapur,151287,1,Wheat
+Dindori,134146,2,Mix
+Mandla,180483,1,Mix
+Chhindwara,372107,4,Wheat
+Seoni,279419,4,Mix
+Balaghat,299452,1,Rice
+Ashoknagar,164988,1,Wheat
+Anuppur,138010,1,Mix
+Burhanpur,133181,1,Wheat
+Alirajpur,105711,0,Wheat
+Singrauli,119763,4,Mix
+Kachchh,425126,0,Wheat
+Banas,484763,0,Wheat
+Patan,224837,0,Wheat
+Mahesana,318821,0,Wheat
+Sabar,382831,1,Mix
+Gandhinagar,222654,1,Wheat
+Ahmadabad,1142711,1,Wheat
+Surendranagar,297723,0,Wheat
+Rajkot,642070,1,Wheat
+Jamnagar,330467,1,Wheat
+Porbandar,96589,0,Wheat
+Junagadh,434215,1,Wheat
+Amreli,230331,1,Wheat
+Bhavnagar,505485,1,Wheat
+Anand,316190,0,Mix
+Kheda,305814,1,Mix
+Panch Mahals,396840,0,Mix
+Dohad,304866,1,Mix
+Vadodara,755550,0,Mix
+Narmada,113842,0,Mix
+Bharuch,236014,1,Mix
+Surat,931621,1,Mix
+The Dangs,47535,3,Mix
+Navsari,313425,3,Mix
+Valsad,307241,3,Mix
+Diu,13432,1,Mix
+Daman,11085,1,Mix
+Dadra & Nagar Haveli,40038,3,Mix
+Nandurbar,243854,1,Mix
+Dhule,341147,1,Mix
+Jalgaon,661181,1,Wheat
+Buldana,447458,1,Wheat
+Akola,286364,1,Wheat
+Washim,204451,1,Wheat
+Amravati,523707,1,Wheat
+Wardha,264152,1,Mix
+Nagpur,844338,1,Mix
+Bhandara,209647,1,Mix
+Gondiya,224580,1,Rice
+Gadchiroli,230253,1,Mix
+Chandrapur,415976,1,Mix
+Yavatmal,477198,1,Wheat
+Nanded,403518,0,Mix
+Hingoli,136819,1,Wheat
+Parbhani,163336,1,Wheat
+Jalna,241440,1,Wheat
+Aurangabad,358608,1,Wheat
+Nashik,948920,3,Wheat
+Thane,1911751,3,Mix
+Mumbai,2246823,1,Mix
+Raigarh,496488,3,Rice
+Pune,1762043,0,Mix
+Ahmadnagar,841251,3,Wheat
+Bid,386360,1,Wheat
+Latur,346128,1,Mix
+Osmanabad,257081,1,Wheat
+Solapur,735647,0,Mix
+Satara,626555,3,Mix
+Ratnagiri,383215,3,Mix
+Sindhudurg,184316,1,Mix
+Kolhapur,666459,3,Mix
+Sangli,502444,1,Mix
+Adilabad,537226,1,Rice
+Nizamabad,514289,1,Rice
+Karimnagar,954737,1,Rice
+Medak,556944,1,Rice
+Hyderabad and Rangar,1382552,1,Rice
+Rangareddi,419502,1,Rice
+Mahbubnagar,688751,1,Rice
+Nalgonda,763013,1,Rice
+Warangal,858923,1,Rice
+Khammam,687428,1,Rice
+Srikakulam,643134,1,Rice
+Vizianagaram,559955,1,Rice
+Visakhapatnam,969395,1,Rice
+East Godavari,1319255,1,Rice
+West Godavari,934781,1,Rice
+Krishna,1156859,4,Rice
+Guntur,1081727,1,Rice
+Prakasam,745913,1,Rice
+Nellore,585811,1,Rice
+Cuddapah,612159,1,Rice
+Kurnool,793699,1,Rice
+Anantapur,872592,2,Rice
+Chittoor,872673,1,Rice
+Belgaum,824330,1,Mix
+Bagalkot,329692,1,Mix
+Bijapur,315949,1,Mix
+Gulbarga,456801,1,Rice
+Bidar,237877,1,Rice
+Raichur,277166,0,Rice
+Koppal,233343,1,Rice
+Gadag,182296,1,Rice
+Dharwad,233960,2,Rice
+Uttara,259476,1,Rice
+Haveri,303873,1,Rice
+Bellary,385767,1,Rice
+Chitradurga,267347,3,Rice
+Davanagere,382070,1,Rice
+Shimoga,365640,1,Rice
+Udupi,163068,1,Rice
+Chikmagalur,265689,1,Rice
+Tumkur,509514,3,Rice
+Kolar,281667,3,Rice
+Bangalore,994832,3,Rice
+Bangalore Rural,159857,3,Rice
+Mandya,402216,3,Rice
+Hassan,332670,3,Rice
+Dakshina Kannada,323586,1,Rice
+Kodagu,98827,1,Rice
+Mysore,519404,3,Rice
+Chamarajanagar,216424,3,Rice
+Ramanagar,194949,3,Rice
+Chikkaballapura,220218,3,Rice
+North Goa,174850,1,Rice
+South Goa,135355,1,Rice
+Lakshadweep,9606,2,Rice
+Kasaragod,224991,1,Rice
+Kannur,467915,1,Rice
+Wayanad,167647,1,Rice
+Kozhikode,617861,1,Rice
+Malappuram,713806,1,Rice
+Palakkad,599013,1,Rice
+Thrissur,668590,1,Rice
+Ernakulam,702139,1,Rice
+Idukki,281194,2,Rice
+Kottayam,402990,1,Rice
+Alappuzha,497774,1,Rice
+Pathanamthitta,291480,1,Rice
+Kollam,637472,1,Rice
+Thiruvananthapuram,697990,1,Rice
+Thiruvallur,863083,1,Rice
+Chennai,1001630,1,Rice
+Kancheepuram,949470,1,Rice
+Vellore,772290,1,Rice
+Dharmapuri,371656,1,Rice
+Tiruvannamalai,567880,1,Rice
+Viluppuram,721674,1,Rice
+Salem,804050,1,Rice
+Namakkal,436865,1,Rice
+Erode,733302,1,Rice
+The Nilgiris,171743,1,Rice
+Coimbatore,1268023,1,Rice
+Dindigul,521850,1,Rice
+Karur,274435,1,Rice
+Tiruchirappalli,605682,1,Rice
+Perambalur,141437,1,Rice
+Ariyalur,218883,1,Rice
+Cuddalore,556259,1,Rice
+Nagapattinam,354606,2,Rice
+Thiruvarur,278103,1,Rice
+Thanjavur,564905,1,Rice
+Pudukkottai,360923,1,Rice
+Sivaganga,341056,1,Rice
+Madurai,674462,1,Rice
+Theni,281851,1,Rice
+Virudhunagar,468405,1,Rice
+Ramanathapuram,303284,1,Rice
+Thoothukkudi,374518,1,Rice
+Tirunelveli,770481,1,Rice
+Kanniyakumari,398092,1,Rice
+Krishnagiri,330718,1,Rice
+Yanam,12394,1,Rice
+Pondicherry,207969,1,Rice
+Mahe,4688,1,Rice
+Karaikal,39292,1,Rice
+South Andamans,46675,1,Rice
+Nicobars,5244,2,Rice
+North and Middle Andamans,23851,1,Rice
