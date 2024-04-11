@@ -3,7 +3,7 @@
  * Author: --
  * Creation Date: Jan 30, 2024 at 11:14:53 AM
  *********************************************/
-range Clusters = 0..4;
+range Clusters = 0..5;
 range Crops = 1..16;
 range millets = 1..6;
 range Pulses = 7..16;
@@ -57,25 +57,17 @@ subject to {
 
 execute {
   var file = new IloOplOutputFile("../data/basket_contents.csv");
-  
-  // Create the header.
-  var header = "cluster";
-  for(var crop in Crops) {
-    header += "," + crops[crop];
-  }
-  file.writeln(header);
-  
-  // For each cluster, write a line with the per-household amount of each crop.
+  file.writeln("cluster,crop,quantity"); // Write the header to the file.
+
+  // For each combination of cluster and crop, write a line with the quantity.
   for(var cluster in Clusters) {
-    var line = "" + cluster;
     for(var crop in Crops) {
-      var perHouseholdAmount = basket[crop][cluster] / households[cluster];
-      line += "," + perHouseholdAmount;
+      var line = cluster + "," + crops[crop] + "," + basket[crop][cluster];
+      file.writeln(line);
     }
-    file.writeln(line);
   }
   
-  file.close();
+  file.close(); // Close the file after writing.
 }
 
 execute {

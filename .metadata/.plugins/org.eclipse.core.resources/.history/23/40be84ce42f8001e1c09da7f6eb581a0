@@ -3,7 +3,7 @@
  * Author: --
  * Creation Date: Jan 30, 2024 at 11:14:53 AM
  *********************************************/
-range Clusters = 0..4;
+range Clusters = 0..5;
 range Crops = 1..16;
 range millets = 1..6;
 range Pulses = 7..16;

@@ -3,7 +3,7 @@
  * Author: --
  * Creation Date: Jan 30, 2024 at 11:14:53 AM
  *********************************************/
-range Clusters = 0..4;
+range Clusters = 0..5;
 range Crops = 1..16;
 range millets = 1..6;
 range Pulses = 7..16;
@@ -54,29 +54,6 @@ subject to {
 }
 
 // After solving the model, write demand by district to a csv file:
-
-execute {
-  var file = new IloOplOutputFile("../data/basket_contents.csv");
-  
-  // Create the header.
-  var header = "cluster";
-  for(var crop in Crops) {
-    header += "," + crops[crop];
-  }
-  file.writeln(header);
-  
-  // For each cluster, write a line with the per-household amount of each crop.
-  for(var cluster in Clusters) {
-    var line = "" + cluster;
-    for(var crop in Crops) {
-      var perHouseholdAmount = basket[crop][cluster] / households[cluster];
-      line += "," + perHouseholdAmount;
-    }
-    file.writeln(line);
-  }
-  
-  file.close();
-}
 
 execute {
   var f = new IloOplOutputFile("../data/basket.csv");

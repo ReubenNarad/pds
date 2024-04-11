@@ -398,3 +398,39 @@ Caused by: org.eclipse.swt.SWTException: Widget is disposed
 	at java.lang.reflect.Method.invoke(Method.java:508)
 	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:55)
 	... 88 more
+!SESSION 2024-04-11 19:59:15.837 -----------------------------------------------
+eclipse.buildId=Build 0
+java.fullversion=JRE 1.8.0 IBM J9 2.8 Windows 8 amd64-64 Compressed References 20160719_312156 (JIT enabled, AOT enabled)
+J9VM - R28_Java8_SR3_20160719_1144_B312156
+JIT  - tr.r14.java_20160629_120284.01
+GC   - R28_Java8_SR3_20160719_1144_B312156_CMPRSS
+J9CL - 20160719_312156
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -clean
+
+!ENTRY org.eclipse.equinox.ds 4 0 2024-04-11 19:59:18.973
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.eclipse.equinox.ds [4]
+  Unresolved requirement: Import-Package: org.eclipse.equinox.internal.util.event; version="1.0.0"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:434)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1582)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1562)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1533)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1476)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:340)
+
+!ENTRY org.eclipse.equinox.registry 2 0 2024-04-11 19:59:48.028
+!MESSAGE The extensions and extension-points from the bundle "ilog.views.eclipse.chart.runtime" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.equinox.registry 2 0 2024-04-11 19:59:48.028
+!MESSAGE The extensions and extension-points from the bundle "ilog.views.eclipse.framework.runtime" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY org.eclipse.equinox.registry 2 0 2024-04-11 19:59:48.028
+!MESSAGE The extensions and extension-points from the bundle "ilog.views.eclipse.gantt.runtime" are ignored. The bundle is not marked as singleton. 
+
+!ENTRY ilog.odms.ide.opllang 1 0 2024-04-11 20:01:30.274
+!MESSAGE concert_wrap.IloEndMT

@@ -13,11 +13,11 @@ SheetConnection prefs("../data/cluster_preferences.csv");
 SheetConnection clusters("../data/clusters.csv");
 
 
-preferences from SheetRead(prefs,"C2:R6");
+preferences from SheetRead(prefs,"C2:R7");
 
 crops from SheetRead(prefs, "C1:R1");
 
-households from SheetRead(prefs, "B2:B6");
+households from SheetRead(prefs, "B2:B7");
 
 households_district from SheetRead(clusters, "B2:B626");
 
