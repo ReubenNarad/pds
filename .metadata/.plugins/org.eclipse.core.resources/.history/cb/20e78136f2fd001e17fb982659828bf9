@@ -51,8 +51,8 @@ subject to {
     sum(crop in Crops) basket[crop][cluster] <= households[cluster];
     
     // Min quantity of millets/pulses
-    sum(millet in Millets) basket[millet][cluster] == min_millet * households[cluster];
-    sum(pulse in Pulses) basket[pulse][cluster] == min_pulse * households[cluster];
+    sum(millet in Millets) basket[millet][cluster] >= min_millet * households[cluster];
+    sum(pulse in Pulses) basket[pulse][cluster] >= min_pulse * households[cluster];
     
     // Max count of millets/pulses
     sum(millet in Millets) indicator[millet][cluster] <= max_n_millet ; 
