@@ -1,0 +1,150 @@
+/*********************************************
+ * OPL 22.1.1.0 Model
+ * Author: --
+ * Creation Date: Jan 30, 2024 at 11:14:53 AM
+ *********************************************/
+range Clusters = 0..4;
+range Crops = 1..16;
+range Millets = 1..6;
+range Pulses = 7..16;
+range Districts = 1..625;
+
+string crops[Crops] = ... ;
+
+float preferences[Crops][Clusters] = ... ;
+
+int households[Clusters] = ... ;
+
+string districts[Districts] = ... ;
+
+int households_district[Districts] = ... ;
+
+int clusters_district[Districts] = ... ;
+
+string cereals_district[Districts] = ... ;
+
+// Toy data- will discuss.
+float available[Crops] = [6000,3000,3000,3000,6000,3000,3000,3000,3000,3000,3000,3000,3000,3000,4000,4000];
+
+float big_M = 999999999 ;
+
+float min_millet = .00005 ; // Per household
+float min_pulse =  .00003 ; // Per household
+float min_cereal = .0001 ; // Per household
+
+float max_n_millet = 2;
+float max_n_pulse = 2 ;
+
+
+// Decision variables
+dvar float+ basket[Crops][Clusters];
+dvar boolean indicator[Crops][Clusters];
+
+// Objective function
+dexpr float utility = ( sum (crop in Crops, cluster in Clusters) (preferences[crop][cluster] * basket[crop][cluster]));
+
+maximize utility ;
+
+// Constraints
+subject to {
+  forall(cluster in Clusters) {
+    sum(crop in Crops) basket[crop][cluster] <= households[cluster];
+    
+    // Min quantity of millets/pulses
+    sum(millet in Millets) basket[millet][cluster] == min_millet * households[cluster];
+    sum(pulse in Pulses) basket[pulse][cluster] == min_pulse * households[cluster];
+    
+    // Max count of millets/pulses
+    sum(millet in Millets) indicator[millet][cluster] <= max_n_millet ; 
+    sum(pulse in Pulses) indicator[pulse][cluster] <= max_n_pulse ; 
+  }
+
+  // Total demand does not exceed availability
+  forall(crop in Crops) {
+    sum(cluster in Clusters) basket[crop][cluster] <= available[crop];
+  }
+  
+  // Binary variable indicator
+  forall(crop in Crops, cluster in Clusters) {
+  	basket[crop][cluster] <= big_M * indicator[crop][cluster];  
+  }
+  
+}
+
+// After solving the model, write demand by district to a csv file:
+
+execute {
+  var file = new IloOplOutputFile("../data/basket_contents.csv");
+  
+  // Create the header.
+  var header = "cluster";
+  for(var crop in Crops) {
+    header += "," + crops[crop];
+  }
+  file.writeln(header);
+  
+  // For each cluster, write a line with the per-household amount of each crop.
+  for(var cluster in Clusters) {
+    var line = "" + cluster;
+    for(var crop in Crops) {
+      var perHouseholdAmount = basket[crop][cluster] / households[cluster];
+      line += "," + perHouseholdAmount;
+    }
+    file.writeln(line);
+  }
+  
+  file.close();
+}
+
+execute {
+  var f = new IloOplOutputFile("../data/basket.csv");
+  var header = "district,Rice,Wheat"; // Start building the header string
+  
+  for(var c in Crops) {
+    header += "," + crops[c]; // Append each crop name to the header
+  }
+  
+  f.writeln(header); // Write the complete header to the file
+
+
+  // Calculate per-district demand
+  for(var d in Districts) {
+    var districtName = districts[d];
+    var demandLine = districtName; // Start line with district name
+    
+    // Calculate Cereal
+    var rice_demand = 0;
+    var wheat_demand = 0;
+    if(cereals_district[d] == "Wheat") {
+      wheat_demand = min_cereal * households_district[d];
+    } else if(cereals_district[d] == "Rice") {
+      rice_demand = min_cereal * households_district[d];
+    } else {
+        wheat_demand = min_cereal * households_district[d] / 2;
+        rice_demand = min_cereal * households_district[d] / 2;
+    }
+    demandLine += "," + rice_demand + "," + wheat_demand;
+	    
+    
+    for(var c in Crops) {
+      var totalCropDemandInDistrict = 0;
+      
+      for(var cl in Clusters) {
+        if(clusters_district[d] == cl) {
+          var clusterTotalDemandForCrop = basket[c][cl];
+          var districtPopulation = households_district[d];
+          var clusterPopulation = households[cl];
+          
+          var districtDemandForCrop = (clusterTotalDemandForCrop * districtPopulation) / clusterPopulation;
+          totalCropDemandInDistrict += districtDemandForCrop;
+        }
+      }
+      
+      demandLine += "," + totalCropDemandInDistrict;
+    }
+    
+    f.writeln(demandLine); // Write the calculated demand for this district
+  }
+  
+  f.close();
+}

@@ -1,0 +1,828 @@
+1,rice,352
+1,wheat,1216
+1,jowar,615
+1,bajra,220
+1,ragi,431
+1,maize,1245
+1,barley,726
+1,small_millets,138
+1,ahrar,1767
+1,moong,1171
+1,masur,749
+1,urd,1884
+1,peas,1885
+1,khesari,941
+1,other pulses,471
+1,gram prducts,1572
+1,besan,1163
+1,other pulse products,1367
+2,rice,1942
+2,wheat,1085
+2,jowar,1628
+2,bajra,1417
+2,ragi,363
+2,maize,984
+2,barley,1043
+2,small_millets,528
+2,ahrar,947
+2,moong,165
+2,masur,1717
+2,urd,1269
+2,peas,359
+2,khesari,1635
+2,other pulses,1323
+2,gram prducts,709
+2,besan,736
+2,other pulse products,440
+3,rice,105
+3,wheat,1455
+3,jowar,408
+3,bajra,1020
+3,ragi,1605
+3,maize,1240
+3,barley,416
+3,small_millets,117
+3,ahrar,1169
+3,moong,1346
+3,masur,1357
+3,urd,466
+3,peas,1566
+3,khesari,649
+3,other pulses,308
+3,gram prducts,371
+3,besan,1323
+3,other pulse products,495
+4,rice,707
+4,wheat,1972
+4,jowar,21
+4,bajra,1294
+4,ragi,81
+4,maize,923
+4,barley,1372
+4,small_millets,788
+4,ahrar,1494
+4,moong,765
+4,masur,984
+4,urd,1497
+4,peas,475
+4,khesari,1683
+4,other pulses,882
+4,gram prducts,742
+4,besan,308
+4,other pulse products,215
+5,rice,15
+5,wheat,696
+5,jowar,1836
+5,bajra,1834
+5,ragi,23
+5,maize,1194
+5,barley,1791
+5,small_millets,1380
+5,ahrar,1274
+5,moong,745
+5,masur,1729
+5,urd,1985
+5,peas,1134
+5,khesari,1923
+5,other pulses,1469
+5,gram prducts,539
+5,besan,387
+5,other pulse products,137
+6,rice,1223
+6,wheat,767
+6,jowar,194
+6,bajra,536
+6,ragi,1169
+6,maize,233
+6,barley,1076
+6,small_millets,1469
+6,ahrar,496
+6,moong,1981
+6,masur,1990
+6,urd,748
+6,peas,901
+6,khesari,974
+6,other pulses,350
+6,gram prducts,427
+6,besan,1046
+6,other pulse products,679
+7,rice,1115
+7,wheat,1448
+7,jowar,1527
+7,bajra,182
+7,ragi,781
+7,maize,1663
+7,barley,455
+7,small_millets,885
+7,ahrar,899
+7,moong,1665
+7,masur,476
+7,urd,1252
+7,peas,725
+7,khesari,719
+7,other pulses,1886
+7,gram prducts,1954
+7,besan,768
+7,other pulse products,75
+8,rice,1171
+8,wheat,475
+8,jowar,1729
+8,bajra,1080
+8,ragi,210
+8,maize,645
+8,barley,1561
+8,small_millets,1819
+8,ahrar,1300
+8,moong,851
+8,masur,123
+8,urd,1154
+8,peas,608
+8,khesari,1869
+8,other pulses,828
+8,gram prducts,1517
+8,besan,1471
+8,other pulse products,77
+9,rice,120
+9,wheat,1803
+9,jowar,1076
+9,bajra,1942
+9,ragi,1098
+9,maize,1251
+9,barley,1437
+9,small_millets,241
+9,ahrar,1497
+9,moong,1338
+9,masur,1630
+9,urd,1979
+9,peas,368
+9,khesari,925
+9,other pulses,513
+9,gram prducts,257
+9,besan,1670
+9,other pulse products,358
+10,rice,1416
+10,wheat,99
+10,jowar,350
+10,bajra,612
+10,ragi,941
+10,maize,1656
+10,barley,1691
+10,small_millets,798
+10,ahrar,732
+10,moong,1104
+10,masur,928
+10,urd,760
+10,peas,509
+10,khesari,806
+10,other pulses,16
+10,gram prducts,573
+10,besan,1826
+10,other pulse products,990
+11,rice,914
+11,wheat,1137
+11,jowar,1260
+11,bajra,1453
+11,ragi,1596
+11,maize,1506
+11,barley,1638
+11,small_millets,1901
+11,ahrar,1833
+11,moong,1114
+11,masur,1105
+11,urd,790
+11,peas,1702
+11,khesari,467
+11,other pulses,1151
+11,gram prducts,1966
+11,besan,1141
+11,other pulse products,1362
+12,rice,62
+12,wheat,1366
+12,jowar,1382
+12,bajra,1646
+12,ragi,499
+12,maize,1883
+12,barley,193
+12,small_millets,128
+12,ahrar,1069
+12,moong,1280
+12,masur,657
+12,urd,583
+12,peas,1297
+12,khesari,1179
+12,other pulses,835
+12,gram prducts,1213
+12,besan,169
+12,other pulse products,554
+13,rice,1643
+13,wheat,1161
+13,jowar,607
+13,bajra,1266
+13,ragi,1026
+13,maize,1023
+13,barley,513
+13,small_millets,501
+13,ahrar,1964
+13,moong,582
+13,masur,728
+13,urd,1244
+13,peas,709
+13,khesari,179
+13,other pulses,1220
+13,gram prducts,98
+13,besan,352
+13,other pulse products,712
+14,rice,1822
+14,wheat,633
+14,jowar,536
+14,bajra,1092
+14,ragi,1179
+14,maize,1535
+14,barley,519
+14,small_millets,699
+14,ahrar,800
+14,moong,659
+14,masur,1667
+14,urd,147
+14,peas,900
+14,khesari,601
+14,other pulses,1873
+14,gram prducts,709
+14,besan,1146
+14,other pulse products,191
+15,rice,523
+15,wheat,1477
+15,jowar,90
+15,bajra,474
+15,ragi,1234
+15,maize,1477
+15,barley,736
+15,small_millets,1317
+15,ahrar,343
+15,moong,357
+15,masur,1714
+15,urd,1169
+15,peas,1103
+15,khesari,1114
+15,other pulses,19
+15,gram prducts,1886
+15,besan,329
+15,other pulse products,1619
+16,rice,840
+16,wheat,1216
+16,jowar,1122
+16,bajra,1871
+16,ragi,66
+16,maize,872
+16,barley,608
+16,small_millets,1596
+16,ahrar,1225
+16,moong,1119
+16,masur,816
+16,urd,1587
+16,peas,1495
+16,khesari,110
+16,other pulses,499
+16,gram prducts,1781
+16,besan,1958
+16,other pulse products,487
+17,rice,1664
+17,wheat,1688
+17,jowar,1929
+17,bajra,930
+17,ragi,1152
+17,maize,1091
+17,barley,1235
+17,small_millets,128
+17,ahrar,1835
+17,moong,1104
+17,masur,151
+17,urd,721
+17,peas,978
+17,khesari,707
+17,other pulses,497
+17,gram prducts,845
+17,besan,1869
+17,other pulse products,23
+18,rice,190
+18,wheat,1665
+18,jowar,1484
+18,bajra,1581
+18,ragi,313
+18,maize,1326
+18,barley,1007
+18,small_millets,1342
+18,ahrar,494
+18,moong,1532
+18,masur,211
+18,urd,610
+18,peas,359
+18,khesari,951
+18,other pulses,1294
+18,gram prducts,616
+18,besan,1037
+18,other pulse products,1594
+19,rice,713
+19,wheat,1143
+19,jowar,1875
+19,bajra,1943
+19,ragi,145
+19,maize,763
+19,barley,1442
+19,small_millets,324
+19,ahrar,602
+19,moong,85
+19,masur,1632
+19,urd,71
+19,peas,524
+19,khesari,1845
+19,other pulses,1309
+19,gram prducts,51
+19,besan,892
+19,other pulse products,427
+20,rice,1219
+20,wheat,978
+20,jowar,1938
+20,bajra,289
+20,ragi,1909
+20,maize,929
+20,barley,1045
+20,small_millets,62
+20,ahrar,667
+20,moong,213
+20,masur,679
+20,urd,182
+20,peas,256
+20,khesari,1727
+20,other pulses,183
+20,gram prducts,1395
+20,besan,183
+20,other pulse products,1736
+21,rice,1831
+21,wheat,862
+21,jowar,612
+21,bajra,1017
+21,ragi,1162
+21,maize,746
+21,barley,1120
+21,small_millets,1891
+21,ahrar,342
+21,moong,1176
+21,masur,774
+21,urd,221
+21,peas,1023
+21,khesari,1761
+21,other pulses,748
+21,gram prducts,1563
+21,besan,1228
+21,other pulse products,1540
+22,rice,1816
+22,wheat,844
+22,jowar,507
+22,bajra,1791
+22,ragi,606
+22,maize,1147
+22,barley,680
+22,small_millets,1561
+22,ahrar,112
+22,moong,1126
+22,masur,57
+22,urd,1917
+22,peas,1435
+22,khesari,1735
+22,other pulses,215
+22,gram prducts,1586
+22,besan,961
+22,other pulse products,1167
+23,rice,328
+23,wheat,901
+23,jowar,312
+23,bajra,91
+23,ragi,372
+23,maize,1092
+23,barley,40
+23,small_millets,135
+23,ahrar,1087
+23,moong,1982
+23,masur,1210
+23,urd,1267
+23,peas,166
+23,khesari,209
+23,other pulses,1356
+23,gram prducts,814
+23,besan,1586
+23,other pulse products,802
+24,rice,763
+24,wheat,1998
+24,jowar,529
+24,bajra,140
+24,ragi,632
+24,maize,351
+24,barley,540
+24,small_millets,729
+24,ahrar,1265
+24,moong,565
+24,masur,1217
+24,urd,1797
+24,peas,209
+24,khesari,582
+24,other pulses,1436
+24,gram prducts,416
+24,besan,97
+24,other pulse products,93
+25,rice,572
+25,wheat,358
+25,jowar,90
+25,bajra,1932
+25,ragi,750
+25,maize,1659
+25,barley,468
+25,small_millets,1291
+25,ahrar,1851
+25,moong,976
+25,masur,245
+25,urd,268
+25,peas,432
+25,khesari,248
+25,other pulses,1718
+25,gram prducts,675
+25,besan,1827
+25,other pulse products,495
+26,rice,1191
+26,wheat,969
+26,jowar,1514
+26,bajra,1480
+26,ragi,1707
+26,maize,1154
+26,barley,1421
+26,small_millets,1995
+26,ahrar,494
+26,moong,1129
+26,masur,788
+26,urd,1062
+26,peas,1696
+26,khesari,1976
+26,other pulses,1171
+26,gram prducts,1866
+26,besan,645
+26,other pulse products,1714
+27,rice,1986
+27,wheat,246
+27,jowar,255
+27,bajra,1284
+27,ragi,1771
+27,maize,1089
+27,barley,298
+27,small_millets,251
+27,ahrar,1003
+27,moong,135
+27,masur,86
+27,urd,102
+27,peas,1738
+27,khesari,1569
+27,other pulses,1687
+27,gram prducts,1677
+27,besan,759
+27,other pulse products,1853
+28,rice,1047
+28,wheat,989
+28,jowar,1681
+28,bajra,1639
+28,ragi,985
+28,maize,371
+28,barley,442
+28,small_millets,1975
+28,ahrar,573
+28,moong,263
+28,masur,1223
+28,urd,523
+28,peas,501
+28,khesari,185
+28,other pulses,440
+28,gram prducts,990
+28,besan,1940
+28,other pulse products,664
+29,rice,1097
+29,wheat,1564
+29,jowar,1794
+29,bajra,1940
+29,ragi,551
+29,maize,1249
+29,barley,200
+29,small_millets,1874
+29,ahrar,944
+29,moong,1447
+29,masur,756
+29,urd,1185
+29,peas,414
+29,khesari,1107
+29,other pulses,1312
+29,gram prducts,946
+29,besan,1811
+29,other pulse products,1847
+30,rice,1081
+30,wheat,1136
+30,jowar,1069
+30,bajra,554
+30,ragi,1325
+30,maize,34
+30,barley,1252
+30,small_millets,1744
+30,ahrar,1197
+30,moong,1536
+30,masur,119
+30,urd,1051
+30,peas,1314
+30,khesari,1962
+30,other pulses,272
+30,gram prducts,349
+30,besan,1143
+30,other pulse products,1704
+31,rice,1201
+31,wheat,70
+31,jowar,1555
+31,bajra,590
+31,ragi,665
+31,maize,664
+31,barley,591
+31,small_millets,924
+31,ahrar,727
+31,moong,1975
+31,masur,262
+31,urd,1918
+31,peas,225
+31,khesari,1493
+31,other pulses,821
+31,gram prducts,986
+31,besan,753
+31,other pulse products,1610
+32,rice,1871
+32,wheat,1073
+32,jowar,1520
+32,bajra,1593
+32,ragi,721
+32,maize,1933
+32,barley,184
+32,small_millets,955
+32,ahrar,1277
+32,moong,364
+32,masur,243
+32,urd,1230
+32,peas,152
+32,khesari,505
+32,other pulses,820
+32,gram prducts,1236
+32,besan,901
+32,other pulse products,211
+33,rice,557
+33,wheat,971
+33,jowar,225
+33,bajra,316
+33,ragi,458
+33,maize,1997
+33,barley,1283
+33,small_millets,79
+33,ahrar,71
+33,moong,1885
+33,masur,596
+33,urd,790
+33,peas,1293
+33,khesari,1117
+33,other pulses,556
+33,gram prducts,1631
+33,besan,139
+33,other pulse products,470
+34,rice,852
+34,wheat,1916
+34,jowar,730
+34,bajra,497
+34,ragi,1328
+34,maize,380
+34,barley,631
+34,small_millets,1194
+34,ahrar,1385
+34,moong,485
+34,masur,732
+34,urd,1841
+34,peas,719
+34,khesari,1058
+34,other pulses,168
+34,gram prducts,495
+34,besan,31
+34,other pulse products,1828
+35,rice,394
+35,wheat,324
+35,jowar,1988
+35,bajra,1146
+35,ragi,452
+35,maize,1507
+35,barley,1833
+35,small_millets,215
+35,ahrar,1751
+35,moong,558
+35,masur,316
+35,urd,1051
+35,peas,1376
+35,khesari,476
+35,other pulses,1161
+35,gram prducts,780
+35,besan,1766
+35,other pulse products,959
+36,rice,799
+36,wheat,892
+36,jowar,358
+36,bajra,337
+36,ragi,34
+36,maize,1772
+36,barley,255
+36,small_millets,79
+36,ahrar,106
+36,moong,1867
+36,masur,869
+36,urd,19
+36,peas,1631
+36,khesari,1667
+36,other pulses,1104
+36,gram prducts,97
+36,besan,457
+36,other pulse products,415
+37,rice,1661
+37,wheat,192
+37,jowar,819
+37,bajra,1489
+37,ragi,1960
+37,maize,1269
+37,barley,458
+37,small_millets,1267
+37,ahrar,751
+37,moong,931
+37,masur,1493
+37,urd,258
+37,peas,934
+37,khesari,496
+37,other pulses,1328
+37,gram prducts,1150
+37,besan,1692
+37,other pulse products,1802
+38,rice,1955
+38,wheat,1199
+38,jowar,1595
+38,bajra,1391
+38,ragi,449
+38,maize,94
+38,barley,246
+38,small_millets,527
+38,ahrar,1014
+38,moong,311
+38,masur,1106
+38,urd,1496
+38,peas,826
+38,khesari,938
+38,other pulses,942
+38,gram prducts,169
+38,besan,1625
+38,other pulse products,84
+39,rice,759
+39,wheat,801
+39,jowar,721
+39,bajra,1981
+39,ragi,473
+39,maize,1042
+39,barley,91
+39,small_millets,140
+39,ahrar,1412
+39,moong,1318
+39,masur,1122
+39,urd,318
+39,peas,1695
+39,khesari,769
+39,other pulses,989
+39,gram prducts,1160
+39,besan,1507
+39,other pulse products,609
+40,rice,1841
+40,wheat,1362
+40,jowar,949
+40,bajra,1155
+40,ragi,912
+40,maize,1684
+40,barley,365
+40,small_millets,1776
+40,ahrar,1576
+40,moong,155
+40,masur,1885
+40,urd,191
+40,peas,1804
+40,khesari,1617
+40,other pulses,1673
+40,gram prducts,913
+40,besan,1163
+40,other pulse products,1145
+41,rice,1128
+41,wheat,632
+41,jowar,200
+41,bajra,651
+41,ragi,963
+41,maize,1926
+41,barley,1973
+41,small_millets,1427
+41,ahrar,3
+41,moong,1416
+41,masur,1771
+41,urd,1543
+41,peas,1077
+41,khesari,559
+41,other pulses,1857
+41,gram prducts,154
+41,besan,382
+41,other pulse products,406
+42,rice,477
+42,wheat,319
+42,jowar,643
+42,bajra,230
+42,ragi,1957
+42,maize,1682
+42,barley,1941
+42,small_millets,50
+42,ahrar,612
+42,moong,1595
+42,masur,452
+42,urd,57
+42,peas,268
+42,khesari,1086
+42,other pulses,1079
+42,gram prducts,172
+42,besan,928
+42,other pulse products,69
+43,rice,1849
+43,wheat,991
+43,jowar,1960
+43,bajra,335
+43,ragi,1147
+43,maize,1031
+43,barley,255
+43,small_millets,615
+43,ahrar,314
+43,moong,192
+43,masur,14
+43,urd,1940
+43,peas,1761
+43,khesari,29
+43,other pulses,6
+43,gram prducts,201
+43,besan,937
+43,other pulse products,1008
+44,rice,1162
+44,wheat,842
+44,jowar,1375
+44,bajra,519
+44,ragi,1967
+44,maize,1231
+44,barley,122
+44,small_millets,1316
+44,ahrar,256
+44,moong,225
+44,masur,1868
+44,urd,1571
+44,peas,158
+44,khesari,918
+44,other pulses,263
+44,gram prducts,218
+44,besan,1881
+44,other pulse products,174
+45,rice,1183
+45,wheat,772
+45,jowar,1756
+45,bajra,842
+45,ragi,1024
+45,maize,512
+45,barley,1285
+45,small_millets,1726
+45,ahrar,414
+45,moong,1801
+45,masur,832
+45,urd,1349
+45,peas,676
+45,khesari,1137
+45,other pulses,1434
+45,gram prducts,717
+45,besan,475
+45,other pulse products,178
+46,rice,1594
+46,wheat,1460
+46,jowar,1813
+46,bajra,935
+46,ragi,880
+46,maize,129
+46,barley,69
+46,small_millets,1831
+46,ahrar,185
+46,moong,1743
+46,masur,1018
+46,urd,1107
+46,peas,139
+46,khesari,1723
+46,other pulses,144
+46,gram prducts,696
+46,besan,1404
+46,other pulse products,678

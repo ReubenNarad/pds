@@ -49,14 +49,10 @@ int ff = 0;
 float F[crops] = ...;
 
 //Govt. Disposable quantity of each crop in each district 
-float PC[locations][crops] = ...;  
-
-// Demand of each crop in each district;
-//float D[locations][crops] = ...; 
+float available[locations][crops] = ...;
 
 // Road Distance between districts
 float tt[locations][locations] = ...; 
-
 
 //Leakage ratio of a crop in each state
 float leakage[states][crops] = ... ;
@@ -93,20 +89,7 @@ float fv = 377.5;
 //Capacity of a procurement center
 int big_M = 100000000; //10^8
 
-// Open market price per unit food crop to consumer;
-//float W[locations][crops] = ...; 
 
-//This are for different senarios and UNUSED
-// ############## ??? ######################
-
-//Lower limit for procurement of each food crop in each state according to current(2009-10) procurement quantities
-//float Act_Proc[states][crops] = ...;
-
-//Quantity of food crops coming into states as per 2011-2012 movement data   
-//float Act_to_state[to_states] = ...;
-
-//Quantity of food crops coming into states as per 2011-2012 movement data
-//float Act_from_state[from_states] = ...;
 
 //DECLARE DECISION VARIABLES
 
@@ -180,38 +163,27 @@ subject to {
 
 
 // Constraint 1
+// Quantity procured in district i must be not exceed the quantity available for procurement
 forall ( i in locations, j in crops)  { 
-
-// Quantity sent for procurement from district i of j has to be less than equal to the quantity available for procurement
-	ct1: ( sum (proc in locations) Q[i][proc][j] ) <= PC[i][j] ;
-
-//	c42: de[i][j] == D[i][j] - PDS_consmp[i][j] ;	
+	ct1: ( sum (proc in locations) Q[i][proc][j] ) <= available[i][j] ;
 }
 
 // Constraint 2-4
 //FLOW CONSTRAINTS 
 
 // Total quantity procured in a district has to be equal to the quantity gone for storage from that district
-
 forall ( proc in locations, j in crops ) {
-
 	ct45: ( sum ( i in locations) Q[i][proc][j] ) ==  ( sum ( store in locations ) T[proc][store][j] ) ;
-
 }
+
 //Total quantity coming to storage Stage 1 has to be equal to the total quantity going out of storage Stage 1
-
  forall ( store1 in locations, j in crops) {
-  
   	ct107: ( sum ( proc in locations) T[proc][store1][j] ) == ( sum ( store2 in locations) Tp[store1][store2][j] ) ;	 
-
- }
+}
 
 //Total quantity stored at storage Stage 2 has to be equal to the total quantity distributed from storage Stage 2
- 
 forall ( store2 in locations, j in crops) {
-  
   	ct110: ( sum ( store1 in locations) Tp[store1][store2][j] ) == ( sum ( distri in locations) S[store2][distri][j] ) ;	 
-
  }
  
 // Constraint 5
@@ -312,7 +284,7 @@ ct180:( !((sum ( store in locations, distri in 15..26, j in crops ) Q[store][dis
  
  }
  
-//Constraint 9&10
+//Constraints 9 & 10
 //Dummy variable to take max (y[i],yp[i])
  forall ( i in locations )
    {
@@ -321,17 +293,6 @@ ct180:( !((sum ( store in locations, distri in 15..26, j in crops ) Q[store][dis
  	ct16: z[i] >= Yp[i] ;  
    }
 
-//District and crop wise constraint: Current(2011-12) PDS consumption is a lower bound for PDS purchase determined by the model
-/**This constraint is valid when allowing for procurement of ONLY rice and wheat
-If allowing for procurement of all crops (coarse crops + rice and wheat )
- change this constraint to: for each district, total PDS purchase (sum over all crops) should not be less than current(2009-10) total PDS consumption (sum over all crops). 
-*/
-// Constraint 11
-//forall ( distri in locations) {
-//
-//	ct219: ( sum( j in crops ) curr_PDS_C[distri][j] ) <= ( sum( j in crops ) PDS_consmp[distri][j] )  ;
-//
-//}
 
 //Constraint 12
 forall ( distri in locations, j in crops) { 
@@ -341,7 +302,6 @@ forall ( distri in locations, j in crops) {
 
 // Constraint 13
 //Incorporating leakage in the PDS Distribution. This constraint is written for each state.
-
 
 forall ( j in crops ) {
 ct143: (sum ( distri in (1..14) ) PDS_consmp[distri][j] ) <= (sum ( store in locations, distri in (1..14) ) S[store][distri][j] ) * (1 - leakage["Jammu & Kashmir"][j] ) ; 
@@ -800,11 +760,11 @@ execute {
 	        }
 	S_csv.close(); 
 	
-	//WRITING values of decision variable PDS Purchase
-	var PC_csv = new IloOplOutputFile(output_path + "PC_Interstate.csv");    
+	//WRITING crop availability read from sold_to_gov't
+	var PC_csv = new IloOplOutputFile(output_path + "crop_availability.csv");    
 	for(i in locations)
 	    for(j in crops) {
-	        PC_csv.writeln(i+","+j+","+PDS_consmp[i][j].solutionValue);
+	        PC_csv.writeln(i+","+j+","+available[i][j]);
 	    }
 	PC_csv.close();
 	

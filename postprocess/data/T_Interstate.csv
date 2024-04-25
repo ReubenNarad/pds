@@ -1690,24 +1690,24 @@
 3,2,gram prducts,0
 3,2,besan,0
 3,2,other pulse products,0
-3,3,rice,129.708313701
+3,3,rice,129.708313696
 3,3,wheat,58.314554143
-3,3,jowar,30.859742028
-3,3,bajra,28.142161721
-3,3,ragi,9.488224591
-3,3,maize,10.286580675
-3,3,barley,10.286580675
-3,3,small_millets,4.729635554
-3,3,ahrar,6.952413604
+3,3,jowar,0
+3,3,bajra,0
+3,3,ragi,16.635937001
+3,3,maize,27.150875575
+3,3,barley,50.006112681
+3,3,small_millets,0
+3,3,ahrar,0
 3,3,moong,0
-3,3,masur,11.185656715
-3,3,urd,10.286580675
+3,3,masur,11.185656711
+3,3,urd,1.120144529
 3,3,peas,8.45647059
 3,3,khesari,0
 3,3,other pulses,0
-3,3,gram prducts,10.286580675
-3,3,besan,5.83322272
-3,3,other pulse products,3.00639865
+3,3,gram prducts,20.00244507
+3,3,besan,15.511038248
+3,3,other pulse products,0
 3,4,rice,0
 3,4,wheat,0
 3,4,jowar,0
@@ -1720,7 +1720,7 @@
 3,4,moong,0
 3,4,masur,0
 3,4,urd,0
-3,4,peas,0
+3,4,peas,3.614431088e-009
 3,4,khesari,0
 3,4,other pulses,0
 3,4,gram prducts,0
@@ -2541,7 +2541,7 @@
 4,4,jowar,0
 4,4,bajra,0
 4,4,ragi,0
-4,4,maize,0
+4,4,maize,-3.614431088e-009
 4,4,barley,0
 4,4,small_millets,0
 4,4,ahrar,0
@@ -4228,13 +4228,13 @@
 6,5,gram prducts,0
 6,5,besan,0
 6,5,other pulse products,0
-6,6,rice,0
+6,6,rice,3.614436823e-009
 6,6,wheat,0
 6,6,jowar,0
 6,6,bajra,0
 6,6,ragi,0
 6,6,maize,0
-6,6,barley,0
+6,6,barley,-3.614436823e-009
 6,6,small_millets,0
 6,6,ahrar,0
 6,6,moong,0
@@ -6766,7 +6766,7 @@
 9,8,gram prducts,0
 9,8,besan,0
 9,8,other pulse products,0
-9,9,rice,0
+9,9,rice,2.114625895e-009
 9,9,wheat,0
 9,9,jowar,0
 9,9,bajra,0
@@ -6777,7 +6777,7 @@
 9,9,ahrar,0
 9,9,moong,0
 9,9,masur,0
-9,9,urd,0
+9,9,urd,-2.114625895e-009
 9,9,peas,0
 9,9,khesari,0
 9,9,other pulses,0
@@ -8458,7 +8458,7 @@
 11,10,gram prducts,0
 11,10,besan,0
 11,10,other pulse products,0
-11,11,rice,0
+11,11,rice,8.545954344e-012
 11,11,wheat,0
 11,11,jowar,0
 11,11,bajra,0
@@ -8468,9 +8468,9 @@
 11,11,small_millets,0
 11,11,ahrar,0
 11,11,moong,0
-11,11,masur,0
+11,11,masur,3.614436823e-009
 11,11,urd,0
-11,11,peas,0
+11,11,peas,-3.622982777e-009
 11,11,khesari,0
 11,11,other pulses,0
 11,11,gram prducts,0
@@ -9304,7 +9304,7 @@
 12,11,gram prducts,0
 12,11,besan,0
 12,11,other pulse products,0
-12,12,rice,0
+12,12,rice,8.545954344e-012
 12,12,wheat,0
 12,12,jowar,0
 12,12,bajra,0
@@ -10151,21 +10151,21 @@
 13,12,besan,0
 13,12,other pulse products,0
 13,13,rice,0
-13,13,wheat,0
+13,13,wheat,5.736922049e-011
 13,13,jowar,0
 13,13,bajra,0
 13,13,ragi,0
-13,13,maize,0
-13,13,barley,0
+13,13,maize,6.399325514e-012
+13,13,barley,2.696509682e-012
 13,13,small_millets,0
 13,13,ahrar,0
 13,13,moong,0
 13,13,masur,0
-13,13,urd,0
+13,13,urd,-2.568173230e-009
 13,13,peas,0
 13,13,khesari,0
 13,13,other pulses,0
-13,13,gram prducts,0
+13,13,gram prducts,2.501708174e-009
 13,13,besan,0
 13,13,other pulse products,0
 13,14,rice,0
@@ -11848,7 +11848,7 @@
 15,15,bajra,0
 15,15,ragi,0
 15,15,maize,0
-15,15,barley,0
+15,15,barley,6.405592239e-011
 15,15,small_millets,0
 15,15,ahrar,0
 15,15,moong,0
@@ -12694,7 +12694,7 @@
 16,16,bajra,0
 16,16,ragi,0
 16,16,maize,0
-16,16,barley,0
+16,16,barley,-6.405592239e-011
 16,16,small_millets,0
 16,16,ahrar,0
 16,16,moong,0
@@ -14380,7 +14380,7 @@
 18,17,gram prducts,0
 18,17,besan,0
 18,17,other pulse products,0
-18,18,rice,0
+18,18,rice,2.592748238e-011
 18,18,wheat,0
 18,18,jowar,0
 18,18,bajra,0
@@ -16072,23 +16072,23 @@
 20,19,gram prducts,0
 20,19,besan,0
 20,19,other pulse products,0
-20,20,rice,0
-20,20,wheat,0
+20,20,rice,75.972915993
+20,20,wheat,95.791942464
 20,20,jowar,0
-20,20,bajra,0
-20,20,ragi,0
-20,20,maize,0
-20,20,barley,0
+20,20,bajra,5.094063686
+20,20,ragi,18.393376295
+20,20,maize,11.385798928
+20,20,barley,51.526059621
 20,20,small_millets,0
 20,20,ahrar,0
 20,20,moong,0
 20,20,masur,0
-20,20,urd,0
-20,20,peas,0
+20,20,urd,1.154191567
+20,20,peas,10.279678049
 20,20,khesari,0
 20,20,other pulses,0
-20,20,gram prducts,0
-20,20,besan,0
+20,20,gram prducts,20.610423851
+20,20,besan,19.79528565
 20,20,other pulse products,0
 20,21,rice,0
 20,21,wheat,0
@@ -17764,23 +17764,23 @@
 22,21,gram prducts,0
 22,21,besan,0
 22,21,other pulse products,0
-22,22,rice,0
-22,22,wheat,0
+22,22,rice,-1.273397804e-009
+22,22,wheat,-3.958078310e-011
 22,22,jowar,0
 22,22,bajra,0
 22,22,ragi,0
-22,22,maize,0
-22,22,barley,0
+22,22,maize,2.176914204e-011
+22,22,barley,-3.443467733e-011
 22,22,small_millets,0
 22,22,ahrar,0
 22,22,moong,0
 22,22,masur,0
-22,22,urd,0
+22,22,urd,1.005137640e-011
 22,22,peas,0
 22,22,khesari,0
 22,22,other pulses,0
-22,22,gram prducts,0
-22,22,besan,0
+22,22,gram prducts,-2.122790832e-011
+22,22,besan,1.336820654e-009
 22,22,other pulse products,0
 22,23,rice,0
 22,23,wheat,0
@@ -18610,12 +18610,12 @@
 23,22,gram prducts,0
 23,22,besan,0
 23,22,other pulse products,0
-23,23,rice,0
-23,23,wheat,0
+23,23,rice,1.273397804e-009
+23,23,wheat,2.438227398e-011
 23,23,jowar,0
-23,23,bajra,0
-23,23,ragi,0
-23,23,maize,0
+23,23,bajra,-1.297780550e-009
+23,23,ragi,-1.426912893e-009
+23,23,maize,1.413133166e-009
 23,23,barley,0
 23,23,small_millets,0
 23,23,ahrar,0
@@ -20302,24 +20302,24 @@
 25,24,gram prducts,0
 25,24,besan,0
 25,24,other pulse products,0
-25,25,rice,75.972915993
-25,25,wheat,95.791942464
-25,25,jowar,31.797730768
-25,25,bajra,16.995809417
-25,25,ragi,11.533877285
-25,25,maize,10.599243588
-25,25,barley,10.599243588
-25,25,small_millets,4.873393882
-25,25,ahrar,7.163733765
+25,25,rice,0
+25,25,wheat,0
+25,25,jowar,0
+25,25,bajra,0
+25,25,ragi,0
+25,25,maize,0
+25,25,barley,0
+25,25,small_millets,0
+25,25,ahrar,0
 25,25,moong,0
 25,25,masur,0
-25,25,urd,10.599243588
-25,25,peas,10.279678048
+25,25,urd,0
+25,25,peas,0
 25,25,khesari,0
 25,25,other pulses,0
-25,25,gram prducts,10.599243588
-25,25,besan,9.823310767
-25,25,other pulse products,2.671264642
+25,25,gram prducts,0
+25,25,besan,0
+25,25,other pulse products,0
 25,26,rice,0
 25,26,wheat,0
 25,26,jowar,0
@@ -21148,7 +21148,7 @@
 26,25,gram prducts,0
 26,25,besan,0
 26,25,other pulse products,0
-26,26,rice,0
+26,26,rice,1.704694164e-010
 26,26,wheat,0
 26,26,jowar,0
 26,26,bajra,0
@@ -21160,7 +21160,7 @@
 26,26,moong,0
 26,26,masur,0
 26,26,urd,0
-26,26,peas,0
+26,26,peas,-1.704694164e-010
 26,26,khesari,0
 26,26,other pulses,0
 26,26,gram prducts,0
@@ -28763,22 +28763,22 @@
 35,34,besan,0
 35,34,other pulse products,0
 35,35,rice,0
-35,35,wheat,0
+35,35,wheat,1070.884052816
 35,35,jowar,0
 35,35,bajra,0
 35,35,ragi,0
-35,35,maize,0
-35,35,barley,0
+35,35,maize,96.494391538
+35,35,barley,436.682204105
 35,35,small_millets,0
 35,35,ahrar,0
 35,35,moong,0
 35,35,masur,0
-35,35,urd,0
+35,35,urd,9.781747752
 35,35,peas,0
 35,35,khesari,0
 35,35,other pulses,0
-35,35,gram prducts,0
-35,35,besan,0
+35,35,gram prducts,174.672881644
+35,35,besan,135.451327992
 35,35,other pulse products,0
 35,36,rice,0
 35,36,wheat,0
@@ -33003,7 +33003,7 @@
 40,40,ahrar,0
 40,40,moong,0
 40,40,masur,0
-40,40,urd,0
+40,40,urd,1.957933261e-011
 40,40,peas,0
 40,40,khesari,0
 40,40,other pulses,0
@@ -37223,23 +37223,23 @@
 45,44,besan,0
 45,44,other pulse products,0
 45,45,rice,0
-45,45,wheat,1070.884052816
-45,45,jowar,260.301840162
-45,45,bajra,47.214271457
-45,45,ragi,12.231460856
-45,45,maize,86.767280058
-45,45,barley,86.767280058
-45,45,small_millets,39.894463049
-45,45,ahrar,58.643589853
+45,45,wheat,0
+45,45,jowar,0
+45,45,bajra,0
+45,45,ragi,0
+45,45,maize,0
+45,45,barley,0
+45,45,small_millets,0
+45,45,ahrar,0
 45,45,moong,0
 45,45,masur,0
-45,45,urd,86.767280058
-45,45,peas,10.901406054
+45,45,urd,0
+45,45,peas,0
 45,45,khesari,0
 45,45,other pulses,0
-45,45,gram prducts,86.767280058
-45,45,besan,49.203217816
-45,45,other pulse products,11.521942888
+45,45,gram prducts,0
+45,45,besan,0
+45,45,other pulse products,0
 45,46,rice,0
 45,46,wheat,0
 45,46,jowar,0

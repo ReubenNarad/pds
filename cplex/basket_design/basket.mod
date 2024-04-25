@@ -24,16 +24,16 @@ int clusters_district[Districts] = ... ;
 string cereals_district[Districts] = ... ;
 
 // Toy data- will discuss.
-float available[Crops] = [6000,3000,3000,3000,6000,3000,3000,3000,3000,3000,3000,3000,3000,3000,4000,4000];
+float available[Crops] = [6000,600,3000,2000,5000,3000,3000,3000,3000,3000,3000,2000,2000,2000,2000,2000];
 
-float big_M = 9999999 ;
+float big_M = 999999999 ;
 
-float min_millet = .00005 ; // Per household
-float min_pulse = .00003 ; // Per household
+float min_millet = .00005  ; // Per household
+float min_pulse =  .00003 ; // Per household
 float min_cereal = .0001 ; // Per household
 
-float max_n_millet = 1;
-float max_n_pulse = 1 ;
+float max_n_millet = 3;
+float max_n_pulse = 3 ;
 
 
 // Decision variables
@@ -56,7 +56,7 @@ subject to {
     
     // Max count of millets/pulses
     sum(millet in Millets) indicator[millet][cluster] <= max_n_millet ; 
-    sum(pulse in Pulses) indicator[pulse][cluster] <= max_n_pulse ;
+    sum(pulse in Pulses) indicator[pulse][cluster] <= max_n_pulse ; 
   }
 
   // Total demand does not exceed availability
