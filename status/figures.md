@@ -1,4 +1,4 @@
-## Figures
+## Status Update: Figures
 
 ### Figure 1: Cluster-wise preferences
 
